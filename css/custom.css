@@ -32,3 +32,22 @@ div.container-fluid.topNavContainer.theme-border#page-wrapper{
 div.tp-bannertimer {
 	display: none;
 }
+
+#meetingInformation {
+	text-align: center;
+}
+
+#meetingLinks {
+	text-align: center;
+}
+
+#meetingLinks a {
+	display: inline-block;
+	padding-right: 20px;
+	text-decoration: underline;
+}
+
+#meetingArchivesLink {
+	text-align: center;
+	text-decoration: underline;
+}

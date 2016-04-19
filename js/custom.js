@@ -37,7 +37,7 @@ var tpj=jQuery;               // MAKE JQUERY PLUGIN CONFLICTFREE
                             navOffsetHorizontal:0,
                             navOffsetVertical:20,
                             
-                            shadow:1,
+                            shadow:0,
                             fullWidth:"off"    
                                                         
                         });
