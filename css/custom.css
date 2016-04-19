@@ -15,3 +15,20 @@ h1#site-name {
 div.clearfix.block.blockOverride {
 	margin-bottom: 0px;
 }
+
+#topBar form #search-submit-topbar {
+	right: 24px;
+	bottom: 0px;
+}
+
+div.banner.bannerBackground {
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), rgba(0,0,0,0) url('../images/road-cloud.jpg') center center no-repeat;
+}
+
+div.container-fluid.topNavContainer.theme-border#page-wrapper{
+	min-height: 0px;
+}
+
+div.tp-bannertimer {
+	display: none;
+}
