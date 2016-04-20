@@ -9,9 +9,9 @@
  */
 
 var tpj=jQuery;               // MAKE JQUERY PLUGIN CONFLICTFREE
-      tpj.noConflict();
+tpj.noConflict();
                 
-      tpj(document).ready(function() {
+tpj(document).ready(function() {
                 
                    if (tpj.fn.cssOriginal!=undefined)   // CHECK IF fn.css already extended
                    tpj.fn.css = tpj.fn.cssOriginal;
@@ -41,4 +41,14 @@ var tpj=jQuery;               // MAKE JQUERY PLUGIN CONFLICTFREE
                             fullWidth:"off"    
                                                         
                         });
-                        })    
+})
+
+tpj(document).ready(function(){
+  tpj(".carouselStyle").owlCarousel({
+                singleItem: true,
+                autoPlay: 5000,
+                navigation: false,
+                pagination: true,
+                dots: true
+  });
+});    
