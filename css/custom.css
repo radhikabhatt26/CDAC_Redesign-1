@@ -171,3 +171,13 @@ div.carouselStyle .owl-next {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
+
+#footerLinks a {
+	display: inline-block;
+	padding-right: 20px;
+	text-decoration: underline;
+}
+
+ul.social-links li {
+	display: inline-block;
+}
