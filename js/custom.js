@@ -46,9 +46,10 @@ tpj(document).ready(function() {
 tpj(document).ready(function(){
   tpj(".carouselStyle").owlCarousel({
                 singleItem: true,
-                autoPlay: 5000,
-                navigation: false,
+                autoPlay: 6000,
+                navigation: true,
+                loop: true,
                 pagination: true,
-                dots: true
+                navigationText: ['Previous', 'Next']
   });
 });    

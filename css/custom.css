@@ -96,3 +96,17 @@ ul.list li {
 ul.list {
 	text-align: center;
 }
+
+div.carouselStyle .owl-buttons {
+	text-align: center;
+}
+
+div.carouselStyle .owl-prev {
+	display: inline-block;
+	padding-right: 30px;
+}
+
+div.carouselStyle .owl-next {
+	display: inline-block;
+	padding-left: 30px;
+}
