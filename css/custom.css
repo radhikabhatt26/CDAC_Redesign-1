@@ -161,3 +161,13 @@ div.carouselStyle .owl-next {
 	text-align: center;
 	padding-top: 50px;
 }
+
+.twitterDiv {
+	display: inline-block;
+}
+
+.CDACTwitter {
+	background-color: green;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
