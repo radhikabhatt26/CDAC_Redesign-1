@@ -52,4 +52,29 @@ tpj(document).ready(function(){
                 pagination: true,
                 navigationText: ['Previous', 'Next']
   });
-});    
+  tpj(".carouselStyle .owl-controls").addClass("newsControlDesign");
+});
+
+tpj(document).ready(function() {
+	tpj(".natureImages").slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  draggable: false,
+	  dots: true,
+	  arrows: false
+	})
+});
+
+tpj(document).ready(function() {
+	tpj('.missionStatements').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  draggable: false,
+	  dots: true,
+	  arrows: false
+	})
+})
+
+tpj(document).ready(function() {
+	tpj
+})

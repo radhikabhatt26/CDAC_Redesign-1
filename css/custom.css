@@ -32,6 +32,7 @@ div.tp-bannertimer {
 
 #meetingInformation {
 	text-align: center;
+	padding-top: 40px;
 }
 
 #meetingLinks {
@@ -82,6 +83,16 @@ img.imageBanner {
 	padding-top: 30px;
 }
 
+.newsArchiveLink {
+	text-align: center;
+	padding-top: 58px;
+	padding-bottom: 4px;
+}
+
+.newsControlDesign {
+	padding-top: 20px;
+}
+
 ul.list li {
 	list-style-type: none;
 	display: inline-block;
@@ -109,4 +120,39 @@ div.carouselStyle .owl-prev {
 div.carouselStyle .owl-next {
 	display: inline-block;
 	padding-left: 30px;
+}
+
+.jumbotron {
+    position: relative;
+    background: #000 url('../images/road-cloud.jpg') center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+/*FOR FUTURE: figure out why you have to set the width of the div for Slick and for the div with the arrows
+*/
+.natureImages {
+	width: 750px;
+	margin: auto;
+	padding-top: 50px;
+}
+
+.missionTitle {
+	text-align: center;
+}
+
+.missionStatements {
+	width: 800px;
+	margin: auto;
+}
+
+.slick-dots {
+	margin-left: 0px;
+}
+
+.missionSection {
+	background-color: pink;
 }
