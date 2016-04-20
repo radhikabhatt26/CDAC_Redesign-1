@@ -156,3 +156,8 @@ div.carouselStyle .owl-next {
 .missionSection {
 	background-color: pink;
 }
+
+.memberProfileLink {
+	text-align: center;
+	padding-top: 50px;
+}
