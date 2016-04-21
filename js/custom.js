@@ -73,8 +73,8 @@ tpj(document).ready(function() {
 	  dots: true,
 	  arrows: false
 	})
-})
+});
 
 tpj(document).ready(function() {
-	tpj
-})
+	tpj('#headerSection').parallax('70%', .75);
+});

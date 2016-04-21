@@ -737,18 +737,24 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 					<h1 class="bannerTextLine2">More CDAC</h3>
 				</div>
 			</div> -->
-			<div class="jumbotron" style="height: 500px">
+		<div id="top">
+
+			<div class="jumbotron" style="height: 500px" id="headerSection">
 			    <div class="container">
 			        <h1>CDAC</h1>
 			        <p>Helping Commerce Be Better</p>
 			    </div>
-			</div>
-
-
 
 			<!-- countdown start -->
+			
+			<!-- countdown end --> 
+			</div>
+			
+			<div class="row">
 			<div class="countdown clearfix"></div>
-			<!-- countdown end -->
+			</div>
+
+			
 
 			<section class="meetingSection">
 				
@@ -779,6 +785,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 				</div>
 			</section>
 
+		</div>
 
 			<section class="pv-40 dark-translucent-bg parallax" style="background-color: orange;">
 				<h2 class="newsFromCDACTitle">News from CDAC</h2>
@@ -1041,20 +1048,21 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 												</div>
 											</div>
 											<div class="col-md-6">
-												<ul class="social-links large colored circle animated-effect-1">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-													<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-													<li class="xing"><a target="_blank" href="http://www.xing.com"><i class="fa fa-xing"></i></a></li>
-													<li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
-													<li class="youtube"><a target="_blank" href="https://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
-												</ul>
-												<ul class="list-icons">
-													<li><i class="fa fa-map-marker pr-10 text-default"></i> One infinity loop, 54100</li>
-													<li><i class="fa fa-phone pr-10 text-default"></i> +00 1234567890</li>
-													<li><a href="mailto:dataAdvisoryCouncil@doc.gov"><i class="fa fa-envelope-o pr-10"></i>DataAdvisoryCouncil@doc.gov</a></li>
-												</ul>
+												<div class="socialMediaLinks">
+													<a href="#"><img src="images/twitter_icon.png"></a>
+													<a href="#"><img src="images/google_icon.png"></a>
+													<a href="#"><img src="images/facebook_icon.png"></a>
+												</div>
+												<div class="contactUs">
+													<div><i class="fa fa-male"></i><a href="#">Burton Reist</a></div>
+													<div>Director of External Affairs and Designated Federal Official, CDAC</div>
+													<div><i class="fa fa-fa-location-arrow"></i>Department of Commerce</div>
+													<div>Economics and Statistics Administration</div>
+													<div>1401 Constitution Ave NW</div>
+													<div>Washington, DC 20230</div>
+													<div><i class="fa fa-phone pr-10 text-default"></i> (202) 482-3331</div>
+													<div><a href="mailto:dataAdvisoryCouncil@doc.gov"><i class="fa fa-envelope-o pr-10"></i>DataAdvisoryCouncil@doc.gov</a></div>
+												</div>
 											</div>
 											<div class="col-md-6">
 												<div id="map-canvas"></div>
@@ -1075,18 +1083,16 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 										<form role="form" id="footer-form" class="margin-clear">
 											<div class="form-group has-feedback">
 												<label class="sr-only" for="name2">Name</label>
-												<input type="text" class="form-control" id="name2" placeholder="Name" name="name2">
-												<i class="fa fa-user form-control-feedback"></i>
+												<input type="email" class="form-control" id="name2" placeholder="Name" name="name2">
+												
 											</div>
 											<div class="form-group has-feedback">
 												<label class="sr-only" for="email2">Email address</label>
 												<input type="email" class="form-control" id="email2" placeholder="Enter email" name="email2">
-												<i class="fa fa-envelope form-control-feedback"></i>
 											</div>
 											<div class="form-group has-feedback">
 												<label class="sr-only" for="message2">Message</label>
 												<textarea class="form-control" rows="6" id="message2" placeholder="Message" name="message2"></textarea>
-												<i class="fa fa-pencil form-control-feedback"></i>
 											</div>
 											<input type="submit" value="Send" class="margin-clear submit-button btn btn-default">
 										</form>
