@@ -55,23 +55,23 @@ tpj(document).ready(function(){
   tpj(".carouselStyle .owl-controls").addClass("newsControlDesign");
 });
 
-tpj(document).ready(function() {
-	tpj(".natureImages").slick({
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  draggable: false,
-	  dots: true,
-	  arrows: false
-	})
-});
+// tpj(document).ready(function() {
+// 	tpj(".natureImages").slick({
+// 	  slidesToShow: 1,
+// 	  slidesToScroll: 1,
+// 	  draggable: false,
+// 	  dots: true,
+// 	  arrows: false
+// 	})
+// });
 
 tpj(document).ready(function() {
 	tpj('.missionStatements').slick({
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  draggable: false,
-	  dots: true,
-	  arrows: false
+	  dots: false,
+	  arrows: true
 	})
 });
 
@@ -81,4 +81,8 @@ tpj(document).ready(function() {
 
 tpj(document).ready(function() {
 	tpj('#headerSection').parallax('50%', .60);
+});
+
+tpj(document).ready(function() {
+    tpj('#missionSection').parallax('50%', .60);
 });

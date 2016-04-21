@@ -138,7 +138,7 @@ section.front-page {
 /*Meeting Information Section*/
 /*Credit for texture is from http://www.transparenttextures.com/*/
 
-.meetingSection {
+div.meetingSection {
 	background-color: #f5f5f5;
 	background-image: url("../images/absurdity.png");
 }
@@ -230,11 +230,14 @@ div.carouselStyle .owl-next {
 
 /*FOR FUTURE: figure out why you have to set the width of the div for Slick and for the div with the arrows
 */
-.natureImages {
+/*.natureImages {
 	width: 750px;
 	margin: auto;
 	padding-top: 50px;
-}
+}*/
+
+
+/*MISSION AND GOALS SECTION*/
 
 .missionTitle {
 	text-align: center;
@@ -243,14 +246,52 @@ div.carouselStyle .owl-next {
 .missionStatements {
 	width: 800px;
 	margin: auto;
+	margin-top: 30px;
 }
 
-.slick-dots {
-	margin-left: 0px;
+.missionStatements h1 {
+	text-align: center;
 }
 
-.missionSection {
-	background-color: pink;
+.missionStatements p {
+	font-size: 16px;
+	font-weight: bolder;
+}
+
+.missionTextDiv {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+}
+
+section#missionSection {
+    position: relative;
+    background: white url('../images/cdac-logo-medium-fade.png') no-repeat fixed;
+    width: 100%;
+    /*height: 100px;*/
+    /*background-size: cover;*/
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+button.slick-prev {
+	background-color: #422b5d;
+}
+
+button.slick-next {
+	background-color: #422b5d;
+}
+
+
+/*MEMBER PROFILE SECTION*/
+
+#memberProfileSection {
+	background-color: #3075c4;
+	color: white;
+}
+
+#memberProfileSection h2 {
+	color: white;
+	font-weight: bold;
 }
 
 .memberProfileLink {
@@ -258,12 +299,16 @@ div.carouselStyle .owl-next {
 	padding-top: 50px;
 }
 
+
+
+
+
 .twitterDiv {
 	display: inline-block;
 }
 
 .CDACTwitter {
-	background-color: green;
+	background-color: #bab3d0;;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
