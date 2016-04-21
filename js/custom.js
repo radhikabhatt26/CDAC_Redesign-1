@@ -75,6 +75,10 @@ tpj(document).ready(function() {
 	})
 });
 
+// the first parameter sets the X - so if it is at 50% it centers the image, b/c it is 50% in from its original (0,0) coordinates
+// the second parameter determines how fast it moves - which influences where the image is on the y axis - so part of the image may
+// seem cut off when it loads but as you scroll it will be fully shown
+
 tpj(document).ready(function() {
-	tpj('#headerSection').parallax('70%', .75);
+	tpj('#headerSection').parallax('50%', .60);
 });
