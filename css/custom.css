@@ -73,7 +73,7 @@ section.front-page {
 .countdownSection {
 	background-color: #3075c4;
 	color: white;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 }
 
 .countdownSection h4 {
@@ -139,29 +139,40 @@ section.front-page {
 /*Credit for texture is from http://www.transparenttextures.com/*/
 
 div.meetingSection {
-	background-color: #f5f5f5;
-	background-image: url("../images/absurdity.png");
+/*	background-color: #f5f5f5;
+	background-image: url("../images/absurdity.png");*/
+	background-color: #3075c4;
 }
 
 #meetingInformation {
 	text-align: center;
-	padding-top: 40px;
+	padding-top: 0px;
+	color:white;
 }
 
 #meetingLinks {
 	text-align: center;
+	color: white;
 }
 
 #meetingLinks a {
 	display: inline-block;
 	padding-right: 20px;
 	text-decoration: underline;
+	color: white;
 }
 
 #meetingArchivesLink {
 	text-align: center;
 	text-decoration: underline;
+	color: white;
 }
+
+#meetingArchivesLink a {
+	color: white;
+}
+
+
 
 
 /*News from CDAC Section*/
@@ -247,6 +258,7 @@ div.carouselStyle .owl-next {
 	width: 800px;
 	margin: auto;
 	margin-top: 30px;
+	top: 20%;
 }
 
 .missionStatements h1 {
@@ -255,12 +267,17 @@ div.carouselStyle .owl-next {
 
 .missionStatements p {
 	font-size: 16px;
-	font-weight: bolder;
+	line-height: 1.85;
+}
+
+.missionStatements li {
+	font-size: 16px;
+	font-weight: 900;
 }
 
 .missionTextDiv {
-	background-color: rgba(0, 0, 0, 0.6);
-	color: white;
+	background-color: rgba(255, 255, 255, 0.9);
+	color: black;
 }
 
 section#missionSection {
@@ -271,14 +288,17 @@ section#missionSection {
     /*background-size: cover;*/
     overflow: hidden;
     margin-bottom: 0px;
+    height: 500px;
 }
 
 button.slick-prev {
 	background-color: #422b5d;
+	left: -60px;
 }
 
 button.slick-next {
 	background-color: #422b5d;
+	right: -60px;
 }
 
 
@@ -314,6 +334,14 @@ button.slick-next {
 .member-profile-text:active{
 	color: white;
 	text-decoration: none;
+		
+}
+
+.memberProfileLink a h5 {
+	color: white;
+	text-decoration: underline;
+	font-size: 22px;
+
 }
 
 
@@ -323,7 +351,7 @@ button.slick-next {
 }
 
 .CDACTwitter {
-	background-color: #bab3d0;;
+	background-color: white;;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -331,9 +359,13 @@ button.slick-next {
 
 /*ABOUT CDAC SECTION*/
 
+.footerStyle {
+}
+
 .aboutCDACSection {
 	margin-top: 60px;
 	margin-bottom: 60px;
+
 }
 #footerLinks a {
 	display: inline-block;
@@ -349,6 +381,7 @@ ul.social-links li {
 	margin-left: 50px;
 	margin-top: 70px;
 }
+
 
 /* Modals */
 
@@ -369,4 +402,12 @@ ul.social-links li {
 
 .modal-content{
 	padding: 20px;
+}
+.contactUs a {
+	margin-left: 5px;
+}
+
+.contactUs div {
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
