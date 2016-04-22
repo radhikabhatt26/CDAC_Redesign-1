@@ -284,10 +284,12 @@ section#missionSection {
 
 button.slick-prev {
 	background-color: #422b5d;
+	left: -60px;
 }
 
 button.slick-next {
 	background-color: #422b5d;
+	right: -60px;
 }
 
 
@@ -316,6 +318,10 @@ button.slick-next {
 	padding-top: 50px;
 }
 
+.memberProfileLink a {
+	color: white;
+	text-decoration: underline;
+}
 
 
 
@@ -360,4 +366,5 @@ ul.social-links li {
 
 .contactUs a {
 	color: white;
+	margin-left: 5px;
 }
