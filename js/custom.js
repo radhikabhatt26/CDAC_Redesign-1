@@ -80,7 +80,7 @@ tpj(document).ready(function() {
 // seem cut off when it loads but as you scroll it will be fully shown
 
 tpj(document).ready(function() {
-	tpj('#headerSection').parallax('50%', .60);
+	tpj('#headerSection').parallax('50%', .93);
 });
 
 tpj(document).ready(function() {
