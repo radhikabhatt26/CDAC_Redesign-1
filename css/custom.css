@@ -289,6 +289,14 @@ button.slick-next {
 	color: white;
 }
 
+.memberProfiles {
+	margin-top: 75px;
+}
+
+.lead {
+	margin-bottom: 5px;
+}
+
 #memberProfileSection h2 {
 	color: white;
 	font-weight: bold;
