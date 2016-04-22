@@ -302,12 +302,19 @@ button.slick-next {
 	font-weight: bold;
 }
 
-.memberProfileLink {
+.memberProfileLink,
+.memberProfileLink:hover {
 	text-align: center;
 	padding-top: 50px;
+	color: white;
 }
 
-
+.member-profile-text,
+.member-profile-text:hover,
+.member-profile-text:active{
+	color: white;
+	text-decoration: none;
+}
 
 
 /*TWITTER SECTION*/
@@ -341,4 +348,25 @@ ul.social-links li {
 .contactUs {
 	margin-left: 50px;
 	margin-top: 70px;
+}
+
+/* Modals */
+
+.modal-title{
+	font-size: 25px;
+}
+
+.container.modal.fade.in
+{
+	background-color: transparent;
+	box-shadow: none;
+    border: none;
+}
+
+.modal-header > i{
+	float: right;
+}
+
+.modal-content{
+	padding: 20px;
 }
