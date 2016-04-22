@@ -164,6 +164,8 @@ div.meetingSection {
 }
 
 
+
+
 /*News from CDAC Section*/
 .newsFromCDACContainer {
 	background-color: #70639c;
@@ -247,6 +249,7 @@ div.carouselStyle .owl-next {
 	width: 800px;
 	margin: auto;
 	margin-top: 30px;
+	top: 20%;
 }
 
 .missionStatements h1 {
@@ -255,12 +258,17 @@ div.carouselStyle .owl-next {
 
 .missionStatements p {
 	font-size: 16px;
-	font-weight: bolder;
+	font-weight: 900;
+}
+
+.missionStatements li {
+	font-size: 16px;
+	font-weight: 900;
 }
 
 .missionTextDiv {
-	background-color: rgba(0, 0, 0, 0.6);
-	color: white;
+	background-color: rgba(255, 255, 255, 0.9);
+	color: black;
 }
 
 section#missionSection {
@@ -271,6 +279,7 @@ section#missionSection {
     /*background-size: cover;*/
     overflow: hidden;
     margin-bottom: 0px;
+    height: 500px;
 }
 
 button.slick-prev {
@@ -316,7 +325,7 @@ button.slick-next {
 }
 
 .CDACTwitter {
-	background-color: #bab3d0;;
+	background-color: white;;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -324,14 +333,20 @@ button.slick-next {
 
 /*ABOUT CDAC SECTION*/
 
+.footerStyle {
+	background-color: #70639c;
+}
+
 .aboutCDACSection {
 	margin-top: 60px;
 	margin-bottom: 60px;
+	color: white;
 }
 #footerLinks a {
 	display: inline-block;
 	padding-right: 20px;
 	text-decoration: underline;
+	color: white;
 }
 
 ul.social-links li {
@@ -341,4 +356,8 @@ ul.social-links li {
 .contactUs {
 	margin-left: 50px;
 	margin-top: 70px;
+}
+
+.contactUs a {
+	color: white;
 }
