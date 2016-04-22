@@ -310,7 +310,7 @@ button.slick-next {
 
 
 
-
+/*TWITTER SECTION*/
 .twitterDiv {
 	display: inline-block;
 }
@@ -321,6 +321,13 @@ button.slick-next {
 	padding-bottom: 30px;
 }
 
+
+/*ABOUT CDAC SECTION*/
+
+.aboutCDACSection {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
 #footerLinks a {
 	display: inline-block;
 	padding-right: 20px;
@@ -329,4 +336,9 @@ button.slick-next {
 
 ul.social-links li {
 	display: inline-block;
+}
+
+.contactUs {
+	margin-left: 50px;
+	margin-top: 70px;
 }
