@@ -326,8 +326,8 @@ button.slick-next {
 	font-weight: bold;
 }
 
-.memberProfileLink,
-.memberProfileLink:hover {
+/*.memberprofileLink,
+.memberprofileLink:hover {
 	text-align: center;
 	padding-top: 50px;
 	color: white;
@@ -339,7 +339,15 @@ button.slick-next {
 	color: white;
 	text-decoration: none;
 		
+}*/
+
+.memberProfileLink {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
 }
+
+
 
 .memberProfileLink a h5 {
 	color: white;
