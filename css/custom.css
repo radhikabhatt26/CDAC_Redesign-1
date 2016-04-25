@@ -41,7 +41,7 @@ div.tp-bannertimer {
 
 /*Applies Century Gothic to just the CDAC website*/
 section.front-page {
-	font-family: 'Muli', sans-serif;
+	font-family: 'Muli', Arial, sans-serif;
 }
 
 
@@ -322,9 +322,18 @@ button.slick-next {
 	font-weight: bold;
 }
 
-.memberProfileLink {
+.memberProfileLink,
+.memberProfileLink:hover {
 	text-align: center;
 	padding-top: 50px;
+	color: white;
+}
+
+.member-profile-text,
+.member-profile-text:hover,
+.member-profile-text:active{
+	color: white;
+	text-decoration: none;
 		
 }
 
@@ -334,7 +343,6 @@ button.slick-next {
 	font-size: 22px;
 
 }
-
 
 
 /*TWITTER SECTION*/
@@ -374,6 +382,27 @@ ul.social-links li {
 	margin-top: 70px;
 }
 
+
+/* Modals */
+
+.modal-title{
+	font-size: 25px;
+}
+
+.container.modal.fade.in
+{
+	background-color: transparent;
+	box-shadow: none;
+    border: none;
+}
+
+.modal-header > i{
+	float: right;
+}
+
+.modal-content{
+	padding: 20px;
+}
 .contactUs a {
 	margin-left: 5px;
 }
