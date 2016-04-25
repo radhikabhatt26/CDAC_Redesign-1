@@ -71,7 +71,7 @@ tpj(document).ready(function() {
 	  slidesToScroll: 1,
 	  draggable: false,
 	  dots: false,
-	  arrows: true
+	  arrows: true,
 	})
 });
 
