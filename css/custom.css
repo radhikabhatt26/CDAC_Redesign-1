@@ -150,6 +150,11 @@ div.meetingSection {
 	color:white;
 }
 
+#meetingInformation h3 {
+	margin-top: 0px;
+	font-size: 16px;
+}
+
 #meetingLinks {
 	text-align: center;
 	color: white;
@@ -157,7 +162,7 @@ div.meetingSection {
 
 #meetingLinks a {
 	display: inline-block;
-	padding-right: 20px;
+	padding-right: 8px;
 	text-decoration: underline;
 	color: white;
 }
@@ -272,7 +277,6 @@ div.carouselStyle .owl-next {
 
 .missionStatements li {
 	font-size: 16px;
-	font-weight: 900;
 }
 
 .missionTextDiv {
@@ -344,6 +348,14 @@ button.slick-next {
 
 }
 
+.memberTable {
+	margin-top: 30px;
+}
+
+.memberTable td, th {
+	padding-left: 3px;
+	padding-right: 10px;
+}
 
 /*TWITTER SECTION*/
 .twitterDiv {
