@@ -351,8 +351,8 @@ button.slick-next {
 
 .memberProfileLink a h5 {
 	color: white;
+	font-size: 15px;
 	text-decoration: underline;
-	font-size: 22px;
 
 }
 
@@ -431,3 +431,40 @@ ul.social-links li {
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+
+/* Navigation */
+nav {    
+	border-top: solid 1px #f1f1f1;
+    border-bottom: solid 1px #f1f1f1;
+}
+
+.navigation,
+.navigation > li{
+	text-decoration: none;
+	list-style: none;
+	text-align: center;
+	border-radius: 0;
+	margin: 10px;
+	border-color: transparent;
+	box-shadow: none;
+	font-size: 20px;
+/*  position: fixed;
+    background: black no-repeat;*/
+    text-shadow: none;
+    font-family:'Muli', Arial, sans-serif;
+}
+
+.navigation >li.btn.btn-default:hover {
+	background-color: #f1f1f1;
+	border-color: #f1f1f1;
+}
+
+.navigation >li.btn.btn-default a:hover {
+	text-decoration: none;
+}
+
+nav > ul > li > a:link, a:hover{
+	text-decoration: none;
+
+}
+
