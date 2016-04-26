@@ -11,7 +11,7 @@
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"			<head profile="http://www.w3.org/1999/xhtml/vocab">
 			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-			<meta name="viewport" content="widtd=device-widtd, initial-scale=1.0"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" href="http://www.esa.doc.gov/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="shortlink" href="/node/394" />
@@ -123,7 +123,7 @@ body.icompany, #wap-menu ul.sf-menu li span.tip a, .ei-title h3, #main_slider .s
     }
     
     
-	@media screen and (max-widtd: 767px){
+	@media screen and (max-width: 767px){
 		 .main_menu_container{
 		 	margin-top: 25px;
 		 }
@@ -455,11 +455,11 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 	(function ($) {
 		// remove tip/desc text from menu if screen is less tdan 979px wide
 		$(document).ready(function () { 
-			var ic_windowWidtd;
-			ic_windowWidtd = $(window).widtd();
+			var ic_windowwidth;
+			ic_windowwidth = $(window).width();
 			var userAlreadyOnMobile;
 			
-			if(ic_windowWidtd < 980){
+			if(ic_windowwidth < 980){
 				$('span.tip').remove();
 				//$('.mainNavImage').remove(); //KC Added
 				userAlreadyOnMobile = true;				
@@ -470,10 +470,10 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 			
 			$(window).resize(function(){
 				
-				var ic_NewWindowWidtd;
-				ic_NewWindowWidtd = $(window).widtd();
+				var ic_NewWindowwidth;
+				ic_NewWindowwidth = $(window).width();
 				
-				if(ic_NewWindowWidtd < 980 && isSelectNavFirstResize == 'first' && userAlreadyOnMobile != true){
+				if(ic_NewWindowwidth < 980 && isSelectNavFirstResize == 'first' && userAlreadyOnMobile != true){
 					 
 					$('.selectnav').remove();
 					//$('.mainNavImage').remove(); //KC Added
@@ -553,7 +553,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 				"bFilter": true,
 				"bSort": false,
 				"bInfo": false,
-				"bAutoWidtd": false
+				"bAutowidth": false
 			});
 		$('.datatable').find('input').attr('placeholder', 'Filter... ');			
 		}); 
@@ -604,7 +604,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
   <label class="element-invisible" for="edit-search-block-form--2">Search using USASearch </label>
  <input class="usagov-search-autocomplete ui-autocomplete-input ui-corner-all form-text" autocomplete="off" type="text" id="edit-search-block-form--2" name="query" value="What are you looking for today?" onblur="setTimeout('closeResults()',2000); if (tdis.value == '') {tdis.value = '';}"  onfocus="if (tdis.value == 'What are you looking for today?') {tdis.value = '';}"  size="15" maxlengtd="128" />
 </div>
-<input id="search-submit-topbar" rel="tooltip" data-placement="bottom" data-original-title="Click to search" type="image" src="images/search-box-button.png" height="32" widtd="26" border="0" a="Search" /><input type="hidden" name="affiliate" value="esa" />
+<input id="search-submit-topbar" rel="tooltip" data-placement="bottom" data-original-title="Click to search" type="image" src="images/search-box-button.png" height="32" width="26" border="0" a="Search" /><input type="hidden" name="affiliate" value="esa" />
 
 </div>
 </div></form></div>
@@ -675,7 +675,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 				<script type="text/javascript">
 					(function ($) {
 							/* MENU DESCRIPTION MAKER*/														
-					  var wapoWindowWidtd = $(window).widtd();
+					  var wapoWindowWidth = $(window).width();
 							// fetch titles and add descriptions
 					  $('.content > #nav > li > a').each(function(index, value){
 						var mainMenuTitle = $(value).attr('title');
@@ -736,13 +736,14 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 			
 			-->
 <!-- 			<div class="container-">
-				<div class="fullwidtdbanner">
+				<div class="fullwidthbanner">
 					<h1 class="bannerTextLine1">CDAC</h3>
 					<h1 class="bannerTextLine2">More CDAC</h3>
 				</div>
 			</div> -->
 
 			<div class="jumbotron" style="height: 500px" id="headerSection">
+			    <div class="logo"></div>
 			    <div class="container">
 			    </div>
 
@@ -1277,11 +1278,11 @@ var addtdis_share = {"templates":{"twitter":"{{title}} {{url}} via @Addtdis"}}
 		
 		/* add styles */
 		var portolioImageContainerHeight = $(tdis).parent().height();
-		var portolioImageContainerWidtd = $(tdis).parent().widtd();
+		var portolioImageContainerwidth = $(tdis).parent().width();
 		
-		/* set widtd and height 
+		/* set width and height 
 		$(tdis).css({
-			widtd: portolioImageContainerWidtd,
+			width: portolioImageContainerwidth,
 			height: portolioImageContainerHeight,
 		})
 		*/

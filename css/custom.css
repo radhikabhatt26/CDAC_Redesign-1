@@ -59,14 +59,22 @@ section.front-page {
 /*Jumbotron/Parallax section*/
 .jumbotron {
     position: relative;
-    background: white url('../images/cdac-logo-medium.png') no-repeat fixed;
+    background: url('../images/CDAC-Header-04.png') no-repeat fixed;
     width: 100%;
     /*height: 100px;*/
     /*background-size: cover;*/
     overflow: hidden;
     margin-bottom: 0px;
+    padding-top: 60px;
+    padding-bottom: 2px;
 }
 
+#headerSection .logo {
+	background: url('../images/cdac-logo-final3.png') no-repeat fixed;
+	z-index: 200;
+	margin: auto;
+	height: 700px;
+}
 
 /*Countdown Section*/
 

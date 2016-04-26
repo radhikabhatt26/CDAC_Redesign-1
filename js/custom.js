@@ -80,8 +80,12 @@ tpj(document).ready(function() {
 // seem cut off when it loads but as you scroll it will be fully shown
 
 tpj(document).ready(function() {
-	tpj('#headerSection').parallax('50%', .93);
+	tpj('#headerSection').parallax('50%', .20);
 });
+
+tpj(document).ready(function() {
+    tpj('#headerSection .logo').parallax('50%', .9);
+})
 
 tpj(document).ready(function() {
     tpj('#missionSection').parallax('50%', .60);
