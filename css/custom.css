@@ -144,13 +144,13 @@ section.front-page {
 }
 .countdown-section {
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   
   color: white;
 }
 .countdown-show4 .countdown-section {
   padding-left: 20px;
-  width: 8%;
+  width: 12%;
   
     text-align: center;
 }
