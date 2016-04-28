@@ -752,7 +752,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
                     <h4> <span style = "">Tune in to hear the brightest minds in tech and <br>data advise on the  future of data-driven public service</span></h4>
                     <h4><strong>May 5 + 6, 2016 @ Google - NYC</strong></h4>
                 
-                    <div class="counter">
+                    <div class="counter" style="font-family:HelveticaNeue-Light">
                         <h3><div id="countdown"></div></h3>
                         </div><br> <!-- /.Counter Div -->
                     </div>
@@ -1494,8 +1494,8 @@ var addtdis_share = {"templates":{"twitter":"{{title}} {{url}} via @Addtdis"}}
             seconds = parseInt(seconds_left % 60);
 
             // format countdown string + set tag value
-            countdown.innerHTML = '<span class="days">' + days +  ' <b>day </b></span> <span class="hours">' + hours + ' <b>hours </b></span> <span class="minutes">'
-            + minutes + ' <b>minutes </b></span> <span class="seconds">' + seconds + ' <b>seconds </b></span>';  
+            countdown.innerHTML = '<span class="days"><b>' + days +  '</b> days </span> <span class="hours"><b>' + hours + '</b> hours </span> <span class="minutes"><b>'
+            + minutes + '</b> minutes </span> <span class="seconds"><b>' + seconds + '</b> seconds </span>';  
 
         }, 1000);
             </script>
