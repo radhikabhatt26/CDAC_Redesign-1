@@ -750,12 +750,12 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 			    <div class="headtext ">
                     <h2> <span style = "font-size: 180%;">COMMERCE DATA<br> ADVISORY COUNCIL</span></h2>
                     <h4> <span style = "">Tune in to hear the brightest minds in tech and <br>data advise on the  future of data-driven public service</span></h4>
-                    <h4><strong>May 4 + 5, 2016 @ Google - NYC</strong></h4>
+                    <h4><strong>May 5 + 6, 2016 @ Google - NYC</strong></h4>
                 
-                    
-					<!--<div class="countdown" ></div>-->
-			         
-                </div>
+                    <div class="counter">
+                        <h3><div id="countdown"></div></h3>
+                        </div><br> <!-- /.Counter Div -->
+                    </div>
                 
 			    <div class="container">
 			    </div>
@@ -1466,6 +1466,38 @@ var addtdis_share = {"templates":{"twitter":"{{title}} {{url}} via @Addtdis"}}
 		mymap.on('click', onMapClick);
 
 	</script>
+         <script type="text/javascript">
+            // set the date we're counting down to
+        var target_date = new Date('May 5, 2016').getTime();
 
+        // variables for time units
+        var days, hours, minutes, seconds;
+
+        // get tag element
+        var countdown = document.getElementById('countdown');
+
+        // update the tag with id "countdown" every 1 second
+        setInterval(function () {
+
+            // find the amount of "seconds" between now and target
+            var current_date = new Date().getTime();
+            var seconds_left = (target_date - current_date) / 1000;
+
+            // do some time calculations
+            days = parseInt(seconds_left / 86400);
+            seconds_left = seconds_left % 86400;
+
+            hours = parseInt(seconds_left / 3600);
+            seconds_left = seconds_left % 3600;
+
+            minutes = parseInt(seconds_left / 60);
+            seconds = parseInt(seconds_left % 60);
+
+            // format countdown string + set tag value
+            countdown.innerHTML = '<span class="days">' + days +  ' <b>day </b></span> <span class="hours">' + hours + ' <b>hours </b></span> <span class="minutes">'
+            + minutes + ' <b>minutes </b></span> <span class="seconds">' + seconds + ' <b>seconds </b></span>';  
+
+        }, 1000);
+            </script>
 </body>
 </html>
