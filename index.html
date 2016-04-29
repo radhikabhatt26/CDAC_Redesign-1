@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -395,7 +394,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 
 			<!--img preloader-->
 
-			<script type="text/javascript">(function ($) { $.fn.preloader=function(options){var defaults={delay:200,preload_parent:"a",check_timer:300,ondone:function(){},oneachload:function(image){},fadein:500};var options=$.extend(defaults,options),root=$(tdis),images=root.find("img").css({"visibility":"hidden",opacity:0}),timer,counter=0,i=0,checkFlag=[],delaySum=options.delay,init=function(){timer=setInterval(function(){if(counter>=checkFlag.lengtd){clearInterval(timer);options.ondone();return}for(i=0;i<images.lengtd;i++){if(images[i].complete==true){if(checkFlag[i]==false){checkFlag[i]=true;options.oneachload(images[i]);counter++;delaySum=delaySum+options.delay}$(images[i]).css("visibility","visible").delay(delaySum).animate({opacity:1},options.fadein,function(){$(tdis).parent().removeClass("preloader")})}}},options.check_timer)};images.each(function(){if($(tdis).parent(options.preload_parent).lengtd==0)$(tdis).wrap("<a class='preloader' />");else $(tdis).parent().addClass("preloader");checkFlag[i++]=false});images=$.makeArray(images);var icon=jQuery("<img />",{id:'loadingicon',src:'/sites/all/themes/icompany/img/89.gif'}).hide().appendTo("body");timer=setInterval(function(){if(icon[0].complete==true){clearInterval(timer);init();icon.remove();return}},100)} })(jQuery);</script>
+			<script type="text/javascript">(function ($) { $.fn.preloader=function(options){var defaults={delay:200,preload_parent:"a",check_timer:300,ondone:function(){},oneachload:function(image){},fadein:500};var options=$.extend(defaults,options),root=$(this),images=root.find("img").css({"visibility":"hidden",opacity:0}),timer,counter=0,i=0,checkFlag=[],delaySum=options.delay,init=function(){timer=setInterval(function(){if(counter>=checkFlag.lengtd){clearInterval(timer);options.ondone();return}for(i=0;i<images.lengtd;i++){if(images[i].complete==true){if(checkFlag[i]==false){checkFlag[i]=true;options.oneachload(images[i]);counter++;delaySum=delaySum+options.delay}$(images[i]).css("visibility","visible").delay(delaySum).animate({opacity:1},options.fadein,function(){$(this).parent().removeClass("preloader")})}}},options.check_timer)};images.each(function(){if($(this).parent(options.preload_parent).lengtd==0)$(this).wrap("<a class='preloader' />");else $(this).parent().addClass("preloader");checkFlag[i++]=false});images=$.makeArray(images);var icon=jQuery("<img />",{id:'loadingicon',src:'/sites/all/themes/icompany/img/89.gif'}).hide().appendTo("body");timer=setInterval(function(){if(icon[0].complete==true){clearInterval(timer);init();icon.remove();return}},100)} })(jQuery);</script>
 			<!--script executions -->
 <script type="text/javascript">
 
@@ -404,11 +403,11 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 						attach:function (context, settings) {
 							$('img.captioned').wrap("<figure></figure>");
 							$("img.captioned").each(function (i, ele) {
-								var title = tdis.title;
-								$(tdis).closest("figure").append("<figcaption>" + tdis.title + "</figcaption>");
+								var title = this.title;
+								$(this).closest("figure").append("<figcaption>" + this.title + "</figcaption>");
 							});
 							$('img.captioned').wrap(function() {
-								return "<a href='" + tdis.src + "'/>";
+								return "<a href='" + this.src + "'/>";
 							});
 							
 				}}}) (jQuery);
@@ -514,7 +513,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 	(function ($) {
     	$(function() {
     		$(window).scroll(function() {
-    			if($(tdis).scrollTop() != 0) {
+    			if($(this).scrollTop() != 0) {
     				$('#toTop').fadeIn();	
     			} else {
     				$('#toTop').fadeOut();
@@ -576,7 +575,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 			<a class="social-icon-1" data-original-title="@ESAStats on Twitter" data-placement="bottom" rel="tooltip" href="https://twitter.com/ESAstats" target="_blank"><span class="icon-circle-light-twitter-bird"></span> </a>
 			<a class="social-icon-1" data-original-title="Comprehensive Blog Feed" data-placement="bottom" rel="tooltip" href="/?q=rss.xml" target="_blank"><span class="icon-circle-light-rss"></span> </a>
 			<a class="social-icon-1" data-original-title="ESA on Facebook" data-placement="bottom" rel="tooltip" href="https://www.facebook.com/econandstatisticsadministration" target="_blank"><span class="icon-circle-light-facebook"></span> </a>
-			<span class="header-social-text">Connect witd Us</span>
+			<span class="header-social-text">Connect with Us</span>
 		</div>
 		<div class="simplenews-subscribe custom-subscribe-form-header"> <!--<form class="simplenews-subscribe custom-subscribe-form-header" action="https://service.govdelivery.com/accounts/USESAEI/subscriber/new/" metdod="post"> --> 
 			<a class="ess" href="https://service.govdelivery.com/accounts/USESAEI/subscriber/new/"><span class="mobile-hide">Subscribe</span></a> 
@@ -606,7 +605,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 <div class="container-inline">
 <div class="form-item form-type-textfield form-item-query">
   <label class="element-invisible" for="edit-search-block-form--2">Search using USASearch </label>
- <input class="usagov-search-autocomplete ui-autocomplete-input ui-corner-all form-text" autocomplete="off" type="text" id="edit-search-block-form--2" name="query" value="What are you looking for today?" onblur="setTimeout('closeResults()',2000); if (tdis.value == '') {tdis.value = '';}"  onfocus="if (tdis.value == 'What are you looking for today?') {tdis.value = '';}"  size="15" maxlengtd="128" />
+ <input class="usagov-search-autocomplete ui-autocomplete-input ui-corner-all form-text" autocomplete="off" type="text" id="edit-search-block-form--2" name="query" value="What are you looking for today?" onblur="setTimeout('closeResults()',2000); if (this.value == '') {this.value = '';}"  onfocus="if (this.value == 'What are you looking for today?') {this.value = '';}"  size="15" maxlengtd="128" />
 </div>
 <input id="search-submit-topbar" rel="tooltip" data-placement="bottom" data-original-title="Click to search" type="image" src="images/search-box-button.png" height="32" width="26" border="0" a="Search" /><input type="hidden" name="affiliate" value="esa" />
 
@@ -634,7 +633,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 									</div>
 			</div>
 		</div>
-		<div id="wap-menu" class="span7">
+		<div id="wap-menu" class="span7" style="text-align: right; float:left; margin-left: 14.564103%">
 			<div class="pull-right main_menu_container">
 				<div class="region region-main-menu">
     
@@ -713,40 +712,14 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 </div>
 
 
+		<section class="no-trans front-page   ">
 
-
-
-
-
-
-<section class="no-trans front-page   ">
-
-		<!-- scrollToTop -->
-		<!-- ================ -->
-		<!-- <div class="scrollToTop circle"><i class="icon-up-open-big"></i></div> -->
-		
 		<!-- page wrapper start -->
 		<!-- ================ -->
 		<div class="page-wrapper">
 		
-			<!-- banner start -->
-			<!-- ================ -->
-<!-- 			<div class="banner header-top clearfix bannerBackground" style="height:400px">
-				<h1>CDAC Homepage</h1>
-				<h3>Here to help Commerce</h3>
-			
 
-			</div>
-			
-			-->
-<!-- 			<div class="container-">
-				<div class="fullwidthbanner">
-					<h1 class="bannerTextLine1">CDAC</h3>
-					<h1 class="bannerTextLine2">More CDAC</h3>
-				</div>
-			</div> -->
-
-			<div class="jumbotron " style="height: 500px;" id="">
+			<div class="jumbotron container" style="height: 500px;" id="">
 			    <div class="headtext ">
                     <h2> <span style = "font-size: 180%;">COMMERCE DATA<br> ADVISORY COUNCIL</span></h2>
                     <h4> <span style = "">Tune in to hear the brightest minds in tech and <br>data advise on the  future of data-driven public service</span></h4>
@@ -755,77 +728,17 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
                     <div class="counter" style="font-family:HelveticaNeue-Light">
                         <h3><div id="countdown"></div></h3>
                         </div><br> <!-- /.Counter Div -->
-                    </div>
+                </div>
                 
-			    <div class="container">
-			    </div>
                 <div style="text-align:center">
                     <a href="http://www.eventbrite.com/o/economic-and-statistics-administration-department-of-commerce-8227114475"><button type="button" class="btn btn-default" style = "font-family:HelveticaNeue-Light">Register</button></a>
                     <button type="button" class="btn btn-default" style = "font-family:HelveticaNeue-Light">Live Stream</button>
                      <button type="button" class="btn btn-default" style = "font-family:HelveticaNeue-Light">May 2016 Agenda</button>
                 </div>
-
-			<!-- countdown start -->
-			
-			<!-- countdown end --> 
 			</div>
-			
-			<!--OLD NAV BAR-->
-			<!--<div>
-				<nav> 
-					<ul class="navigation">
-						<li class="btn btn-default"><a href="meeting.html">Meetings</a></li>
-						<li class="btn btn-default"><a href="profiles.html">Membership</a></li>
-						<li class="btn btn-default"><a href="#contactUs">Contact</a></li>
-					</ul>
-				</nav>
-			</div>-->
-			
-
-			<div class="meetingSection clearfix">
-				
-<!-- 				<div class="natureImages">
-				    <div><img src="images/sliderPics/boat.jpg"></div>
-				    <div><img src="images/sliderPics/buildings.jpg"></div>
-				    <div><img src="images/sliderPics/grass.jpg"></div>
-				    <div><img src="images/sliderPics/boat.jpg"></div>
-				    <div><img src="images/sliderPics/buildings.jpg"></div>
-				</div>
-				<div class="carouselArrows"></div> -->
-                    
-                <!--
-
-				<div id="meetingInformation">
-                    <div>
-                        <h2
-                    </div>
-                    <div  class="hidden-xs hidden-sm col-lg-8 col-md-8">
-                    </div>
-                    <div  style="text-align:left" class="hidden-xs hidden-sm col-lg-4 col-md-4">
-                        <h4> May 5 + 6, 2016</h4>
-                        <h4> Google  - New York</h4>
-                        <h4>76 9th Ave.</h4>
-                        <h4>New York, NY 10011</h4>	
-                    </div>
-                    </row>
-								
-				</div>
-
-				<div id="meetingLinks">
-					<a href="#"><h3> Agenda </h3></a>
-					
-					<a href="meeting.html"><h3> Meeting Information </h3></a><br>
-					
-				</div>
-
-				<div id="meetingArchivesLink">
-					<a href="meeting.html"><h5> Meeting Archives</h5></a>
-				</div>
-			</div>
--->
                 
             <!--WHAT IS CDAC?-->
-            <section style="background-color:white">
+            <section style="background-color:white" class="container-fluid">
 				
 				<!-- <div class="missionTitle"></div> -->
 				<div class="row cent " ><br>
@@ -833,29 +746,29 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
                     <h5 ><span style="font-size:140%; color:slategrey">MISSION + GOALS</span></h5>
                     
                     <div  class=" col-lg-1 col-md-1" ></div>
-                    <div  class=" col-lg-10 col-md-10" style="text-align:left;font-size:120%;">
-                        <p><strong>The Department of Commerce collects, processes, and disseminates approximately 36% of federal open data, with the goal of enabling the public to use that data to strengthen American society and the economy. </strong>The government is always working to improve its delivery of services, and the Commerce Data Advisory Council (CDAC) is a critical resource for guiding continuous improvement. Assembled by Secretary of Commerce Penny Pritzker, the CDAC provides expert guidance and insight to the Department of Commerce's data leadership, covering a wide range of pressing issues in data and technology: </p><br>
+                    <div  class=" col-lg-10 col-md-10" style="text-align:left;font-size:120%">
+                        <p><strong>The Department of Commerce collects, processes, and disseminates approximately 36% of the federal open data. That data fuels planning, research and operations that support society and the economy. </strong>Commerce is continuously working to improve in its delivery of services. To help guide the Department's efforts, Secretary of Commerce Penny Pritzker has assembled the Commerce Data Advisory Council (CDAC). The CDAC provides expert guidance and insight to the Department of Commerce's data leadership, covering a wide range of pressing issues in data and technology: </p><br>
                     </div>
                     <div  class=" col-lg-1 col-md-1" ></div>
                 </div>
                 
                 <div  class="row">
                         <div  class=" col-lg-1 col-md-1" ></div>
-                        <div  class=" col-lg-5 col-md-5 " style="text-align:left;;font-size:115%">
+                        <div  class=" col-lg-5 col-md-5 " style="text-align:left;;font-size:120%">
                             <ul>
-                            <li><strong>Data management practices </strong>that make it easier to track and disseminate integrated interoperable data for diverse users<br><br></li>
-                            <li> <strong>Best practices </strong>that can be deployed across Commerce to achieve <strong> common, open standards </strong>related to taxonomy, vocabulary, APIs metadata, and other key data characteristics<br><br></li>
-                            <li> Policy issues that arise from expanding access to data, including issues related to <strong>privacy, latency, and consistency</strong><br><br></li>
+                            <li><strong>Data management practices</strong> that make it easier to rack and disseminate integrated interoperable data for diverse users<br><br></li>
+                            <li>Best practices that can be deployed across Commerce to achieve <strong>common, open standards</strong> related to taxonomy, vocabulary, APIs metadata, and other key data characteristics<br><br></li>
+                            <li><strong>Policy issues that arrive from expanding access to data</strong>, including issues related to privacy, latency, and consistency<br><br></li>
                             
                         </ul></div>
                         <div  class=" col-lg-5 col-md-5" style="text-align:left;;font-size:120%"><ul>
-                            <li>Opportunities and risks related to the combination of public and private data sources and the development of joint data products and services resulting from <strong>public-private partnerships</strong><br><br></li>
-                            <li> <strong>External uses of Commerce data</strong> and similar federal, state, and private data sets by businesses<br><br></li>
-                            <li><strong>Methods to enhance communication</strong> and collaboration between stakeholders and subject-matter experts at Commerce on data access and use<br><br></li>
+                            <li>Opportunities and risks related to the combination of public and private data sources and the development of joint data products and services resulting from public-private partnerships<br><br></li>
+                            <li>External uses of Commerce data and similar federal, state, and private data sets by businesses<br><br></li>
+                            <li>Methods to enhance communication and collaboration between stakeholders and subject-matter experts at Commerce on data access and use<br><br></li>
                         </ul></div>
                         <div  class=" col-lg-1 col-md-1" ></div>
                 </div>
-                <divclass="row">
+                <div class="row">
                     <div  class=" col-lg-1 col-md-1" ></div>
                     <div  class=" col-lg-10 col-md-10" > 
                         <p style="text-align:left;font-size:120%"><strong>Council meetings are held on a quarterly basis. Members of the public may observe the proceedings in person or via live stream.</strong> </p>
@@ -863,11 +776,12 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
                     <div  class=" col-lg-1 col-md-1" ></div>       
                    
                 </div>
+            </section>
                     
                     
                 
                
-            <!--MIDDLE IMAGE-->
+            <            <!--MIDDLE IMAGE-->
                 <section style="background-color:white">
 				    
         
@@ -1417,9 +1331,12 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 
                 </section>
 
+
+
+
 			<!-- NEWS SECTION START -->
                 
-                <section style="background-color:#white; " class="cent">
+                <section style="background-color:#white; " class="cent container-fluid">
                      <div class = "cent">
                     <div style="background-color:#6AABFC">
 			             <h2 ><span style="font-size:140%; color:white;"> NEWS + TRENDING</span></h2>
@@ -1473,20 +1390,21 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 					<div class="container aboutCDACSection">
 						<div class="footer-inner">
                             
-                             <div  class="row">
-                        <div  class=" col-lg-1 col-md-1" ></div>
-                        <div  class=" col-lg-5 col-md-5 " style="text-align:left;">
+                        <div  class="row">
+                        	<div  class=" col-lg-1 col-md-1" ></div>
+                        	<div  class=" col-lg-5 col-md-5 " style="text-align:left;">
                         
 								<h4>About</h4>				
-                               <p>The CDAC consists of up to 20 members representing the entire spectrum of Commerce data including demographic, economic, scientific, environmental, patent, and geospatial data. These leaders come from the information technology, NGO, non-profit, and academic communities, and from local governments—leaders who appreciate the range of data that the Department of Commerce distributes and the full lifecycle of data collection, compilation, analysis, and dissemination. They offer a balanced perspective and varied expertise to ensure meaningful dialogue and guidance on how the Commerce Department can realize its vision as America's Data Agency.</p>
-                        
-                            <div id="footerLinks">
-                                <a href="meeting.html"><button type="button" class="btn btn-default" style = "font-family:HelveticaNeue-Light">Past Meetings</button></a>
-                                <a href="faca-documentation.html"><button type="button" class="btn btn-default" style = "font-family:HelveticaNeue-Light">FACA Documentation</button></a>
+	                            <p>The CDAC consists of up to 20 members representing the entire spectrum of Commerce data including demographic, economic, scientific, environmental, patent, and geospatial data. These leaders come from the information technology, NGO, non-profit, and academic communities, and from local governments—leaders who appreciate the range of data that the Department of Commerce distributes and the full lifecycle of data collection, compilation, analysis, and dissemination. They offer a balanced perspective and varied expertise to ensure meaningful dialogue and guidance on how the Commerce Department can realize its vision as America's Data Agency.</p>
+	                        
+	                            <div id="footerLinks">
+	                                <a href="meeting.html"><button type="button" class="btn btn-default" style = "font-family:HelveticaNeue-Light">Past Meetings</button></a>
+	                                <a href="faca-documentation.html"><button type="button" class="btn btn-default" style = "font-family:HelveticaNeue-Light">FACA Documentation</button></a>
 
-                            </div>
+	                            </div>
                      
-                        </div>
+                        	</div>
+                        
                         <div  class=" col-lg-5 col-md-5" style="text-align:left;">
                            
                                 <h4>Contact Us</h4>
@@ -1499,32 +1417,11 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
                                        <br>Washington, DC 20230
                                        <br><i class="fa fa-phone pr-10 text-default"></i> (202) 482-3331
                                        <br><i class="fa fa-envelope-o pr-10"></i><a href="mailto:CDAC@doc.gov" style="text-decoration: underline; padding-top: 5px">CDAC@doc.gov</a>
-                                    </p>
-                                    </div>
-							</div>
-                        <div  class=" col-lg-1 col-md-1" ></div>
-                </div>
-                            
-							<!-- <div class="row"> -->
-								<div class="row">
-                                    <div class="col-md-6 col-lg-6">
-									<div class="footer-content">
-										
-										
-											
-											
-										</div>
-									</div>
-								
-								<div class="col-md-6 col-lg-6">
-									<div class="footer-content">
-										<div class="contactUs" id="contactUs">
-												
-										</div>
-									</div>
-								</div>
-							<!-- </div> -->
+                                </div>
 						</div>
+                        <div  class=" col-lg-1 col-md-1" ></div>
+                        </div>
+                	</div>
 					</div>
 				</div>
 				<!-- .footer end -->
@@ -1536,6 +1433,12 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 
 
 </section>
+
+
+
+
+
+
 
 
 
@@ -1766,12 +1669,12 @@ Email: <a href="mailto:esawebmaster@doc.gov">ESAwebmaster@doc.gov</a>
 	</div>
  <script type="text/javascript">
 <!--//--><![CDATA[//><!--
-var addtdis_config = {"pubid":"ra-4e2ec8785ab49002","services_compact":"blogger,digg,email,facebook,google_plusone_share,reddit,twitter,yahoobkm,more","data_track_clickback":true,"ui_508_compliant":false,"ui_click":false,"ui_cobrand":"","ui_delay":0,"ui_header_background":"","ui_header_color":"","ui_open_windows":false,"ui_use_css":true,"ui_use_addressbook":false,"ui_language":"en"}
-var addtdis_share = {"templates":{"twitter":"{{title}} {{url}} via @Addtdis"}}
+var addthis_config = {"pubid":"ra-4e2ec8785ab49002","services_compact":"blogger,digg,email,facebook,google_plusone_share,reddit,twitter,yahoobkm,more","data_track_clickback":true,"ui_508_compliant":false,"ui_click":false,"ui_cobrand":"","ui_delay":0,"ui_header_background":"","ui_header_color":"","ui_open_windows":false,"ui_use_css":true,"ui_use_addressbook":false,"ui_language":"en"}
+var addthis_share = {"templates":{"twitter":"{{title}} {{url}} via @Addthis"}}
 //--><!]]>
 </script>
-<script type="text/javascript" src="http://s7.addtdis.com/js/300/addtdis_widget.js#pubid=ra-4e2ec8785ab49002&amp;async=1"></script>
-<script type="text/javascript" src="http://www.esa.doc.gov/sites/all/modules/addtdis/addtdis.js?o3qemm"></script>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e2ec8785ab49002&amp;async=1"></script>
+<script type="text/javascript" src="http://www.esa.doc.gov/sites/all/modules/addthis/addthis.js?o3qemm"></script>
 <script type="text/javascript" src="http://www.esa.doc.gov/modules/statistics/statistics.js?o3qemm"></script>
 <script type="text/javascript" src="http://www.esa.doc.gov/sites/all/themes/icompany/js/bootstrap.js?o3qemm"></script>
  
@@ -1784,16 +1687,16 @@ var addtdis_share = {"templates":{"twitter":"{{title}} {{url}} via @Addtdis"}}
   	
 	$('.portfolio-hover').each(function(){
 		
-		/* move tdis in image container */
-		var portolioImageContainer = $(tdis).siblings('.views-field ').find('.tdumbnail .portfolio-image');
-		$(tdis).appendTo(portolioImageContainer);
+		/* move this in image container */
+		var portolioImageContainer = $(this).siblings('.views-field ').find('.tdumbnail .portfolio-image');
+		$(this).appendTo(portolioImageContainer);
 		
 		/* add styles */
-		var portolioImageContainerHeight = $(tdis).parent().height();
-		var portolioImageContainerwidth = $(tdis).parent().width();
+		var portolioImageContainerHeight = $(this).parent().height();
+		var portolioImageContainerwidth = $(this).parent().width();
 		
 		/* set width and height 
-		$(tdis).css({
+		$(this).css({
 			width: portolioImageContainerwidth,
 			height: portolioImageContainerHeight,
 		})
@@ -1885,49 +1788,7 @@ var addtdis_share = {"templates":{"twitter":"{{title}} {{url}} via @Addtdis"}}
 		<!-- Custom Scripts -->
 		<script type="text/javascript" src="js/custom.js"></script>
 
-<!--LEAFLET-->
-<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
-	<script>
 
-		var mymap = L.map('mapid').setView([51.505, -0.09], 13);
-
-		L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw', {
-			maxZoom: 18,
-			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-				'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-				'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-			id: 'mapbox.streets'
-		}).addTo(mymap);
-
-
-		L.marker([51.5, -0.09]).addTo(mymap)
-			.bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
-
-		L.circle([51.508, -0.11], 500, {
-			color: 'red',
-			fillColor: '#f03',
-			fillOpacity: 0.5
-		}).addTo(mymap).bindPopup("I am a circle.");
-
-		L.polygon([
-			[51.509, -0.08],
-			[51.503, -0.06],
-			[51.51, -0.047]
-		]).addTo(mymap).bindPopup("I am a polygon.");
-
-
-		var popup = L.popup();
-
-		function onMapClick(e) {
-			popup
-				.setLatLng(e.latlng)
-				.setContent("You clicked the map at " + e.latlng.toString())
-				.openOn(mymap);
-		}
-
-		mymap.on('click', onMapClick);
-
-	</script>
          <script type="text/javascript">
             // set the date we're counting down to
         var target_date = new Date('May 5, 2016').getTime();
