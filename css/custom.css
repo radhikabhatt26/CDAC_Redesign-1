@@ -463,8 +463,18 @@ ul.social-links li {
 
 /* Modals */
 
-.modal-title{
+.member-name{
 	font-size: 25px;
+	margin: 0;
+}
+
+.member-company{
+	font-size: 20px;
+	margin: 0;
+}
+
+.member-title{
+	font-size: 15px;
 }
 
 .container.modal.fade.in
@@ -488,6 +498,34 @@ ul.social-links li {
 .contactUs div {
 	padding-top: 5px;
 	padding-bottom: 5px;
+}
+
+.img-circle{
+	border-radius: 50%;
+	width: 200px;
+}
+
+.row#center-profiles{
+	margin: 0 auto;
+	padding-left: 150px
+}
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.05);
 }
 
 /* Navigation */
