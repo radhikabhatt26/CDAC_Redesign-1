@@ -526,3 +526,10 @@ nav > ul > li > a:link, a:hover{
 
 }
 
+/* Changed the margins on the bootstrap rows to make the body have less margins so they
+ didn't overflow*/
+
+.page-wrapper .row {
+	margin-right: -1px;
+	margin-left: -10px;
+}

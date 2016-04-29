@@ -395,7 +395,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 
 			<!--img preloader-->
 
-			<script type="text/javascript">(function ($) { $.fn.preloader=function(options){var defaults={delay:200,preload_parent:"a",check_timer:300,ondone:function(){},oneachload:function(image){},fadein:500};var options=$.extend(defaults,options),root=$(tdis),images=root.find("img").css({"visibility":"hidden",opacity:0}),timer,counter=0,i=0,checkFlag=[],delaySum=options.delay,init=function(){timer=setInterval(function(){if(counter>=checkFlag.lengtd){clearInterval(timer);options.ondone();return}for(i=0;i<images.lengtd;i++){if(images[i].complete==true){if(checkFlag[i]==false){checkFlag[i]=true;options.oneachload(images[i]);counter++;delaySum=delaySum+options.delay}$(images[i]).css("visibility","visible").delay(delaySum).animate({opacity:1},options.fadein,function(){$(tdis).parent().removeClass("preloader")})}}},options.check_timer)};images.each(function(){if($(tdis).parent(options.preload_parent).lengtd==0)$(tdis).wrap("<a class='preloader' />");else $(tdis).parent().addClass("preloader");checkFlag[i++]=false});images=$.makeArray(images);var icon=jQuery("<img />",{id:'loadingicon',src:'/sites/all/themes/icompany/img/89.gif'}).hide().appendTo("body");timer=setInterval(function(){if(icon[0].complete==true){clearInterval(timer);init();icon.remove();return}},100)} })(jQuery);</script>
+			<script type="text/javascript">(function ($) { $.fn.preloader=function(options){var defaults={delay:200,preload_parent:"a",check_timer:300,ondone:function(){},oneachload:function(image){},fadein:500};var options=$.extend(defaults,options),root=$(this),images=root.find("img").css({"visibility":"hidden",opacity:0}),timer,counter=0,i=0,checkFlag=[],delaySum=options.delay,init=function(){timer=setInterval(function(){if(counter>=checkFlag.lengtd){clearInterval(timer);options.ondone();return}for(i=0;i<images.lengtd;i++){if(images[i].complete==true){if(checkFlag[i]==false){checkFlag[i]=true;options.oneachload(images[i]);counter++;delaySum=delaySum+options.delay}$(images[i]).css("visibility","visible").delay(delaySum).animate({opacity:1},options.fadein,function(){$(this).parent().removeClass("preloader")})}}},options.check_timer)};images.each(function(){if($(this).parent(options.preload_parent).lengtd==0)$(this).wrap("<a class='preloader' />");else $(this).parent().addClass("preloader");checkFlag[i++]=false});images=$.makeArray(images);var icon=jQuery("<img />",{id:'loadingicon',src:'/sites/all/themes/icompany/img/89.gif'}).hide().appendTo("body");timer=setInterval(function(){if(icon[0].complete==true){clearInterval(timer);init();icon.remove();return}},100)} })(jQuery);</script>
 			<!--script executions -->
 <script type="text/javascript">
 
@@ -404,11 +404,11 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 						attach:function (context, settings) {
 							$('img.captioned').wrap("<figure></figure>");
 							$("img.captioned").each(function (i, ele) {
-								var title = tdis.title;
-								$(tdis).closest("figure").append("<figcaption>" + tdis.title + "</figcaption>");
+								var title = this.title;
+								$(this).closest("figure").append("<figcaption>" + this.title + "</figcaption>");
 							});
 							$('img.captioned').wrap(function() {
-								return "<a href='" + tdis.src + "'/>";
+								return "<a href='" + this.src + "'/>";
 							});
 							
 				}}}) (jQuery);
@@ -514,7 +514,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 	(function ($) {
     	$(function() {
     		$(window).scroll(function() {
-    			if($(tdis).scrollTop() != 0) {
+    			if($(this).scrollTop() != 0) {
     				$('#toTop').fadeIn();	
     			} else {
     				$('#toTop').fadeOut();
@@ -576,7 +576,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 			<a class="social-icon-1" data-original-title="@ESAStats on Twitter" data-placement="bottom" rel="tooltip" href="https://twitter.com/ESAstats" target="_blank"><span class="icon-circle-light-twitter-bird"></span> </a>
 			<a class="social-icon-1" data-original-title="Comprehensive Blog Feed" data-placement="bottom" rel="tooltip" href="/?q=rss.xml" target="_blank"><span class="icon-circle-light-rss"></span> </a>
 			<a class="social-icon-1" data-original-title="ESA on Facebook" data-placement="bottom" rel="tooltip" href="https://www.facebook.com/econandstatisticsadministration" target="_blank"><span class="icon-circle-light-facebook"></span> </a>
-			<span class="header-social-text">Connect witd Us</span>
+			<span class="header-social-text">Connect with Us</span>
 		</div>
 		<div class="simplenews-subscribe custom-subscribe-form-header"> <!--<form class="simplenews-subscribe custom-subscribe-form-header" action="https://service.govdelivery.com/accounts/USESAEI/subscriber/new/" metdod="post"> --> 
 			<a class="ess" href="https://service.govdelivery.com/accounts/USESAEI/subscriber/new/"><span class="mobile-hide">Subscribe</span></a> 
@@ -606,7 +606,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 <div class="container-inline">
 <div class="form-item form-type-textfield form-item-query">
   <label class="element-invisible" for="edit-search-block-form--2">Search using USASearch </label>
- <input class="usagov-search-autocomplete ui-autocomplete-input ui-corner-all form-text" autocomplete="off" type="text" id="edit-search-block-form--2" name="query" value="What are you looking for today?" onblur="setTimeout('closeResults()',2000); if (tdis.value == '') {tdis.value = '';}"  onfocus="if (tdis.value == 'What are you looking for today?') {tdis.value = '';}"  size="15" maxlengtd="128" />
+ <input class="usagov-search-autocomplete ui-autocomplete-input ui-corner-all form-text" autocomplete="off" type="text" id="edit-search-block-form--2" name="query" value="What are you looking for today?" onblur="setTimeout('closeResults()',2000); if (this.value == '') {this.value = '';}"  onfocus="if (this.value == 'What are you looking for today?') {this.value = '';}"  size="15" maxlengtd="128" />
 </div>
 <input id="search-submit-topbar" rel="tooltip" data-placement="bottom" data-original-title="Click to search" type="image" src="images/search-box-button.png" height="32" width="26" border="0" a="Search" /><input type="hidden" name="affiliate" value="esa" />
 
@@ -634,7 +634,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 									</div>
 			</div>
 		</div>
-		<div id="wap-menu" class="span7">
+		<div id="wap-menu" class="span7" style="text-align: right; float:left; margin-left: 14.564103%">
 			<div class="pull-right main_menu_container">
 				<div class="region region-main-menu">
     
@@ -713,14 +713,8 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 </div>
 
 
+		<section class="no-trans front-page   ">
 
-
-
-
-
-
-<section class="no-trans front-page   ">
-		
 		<!-- page wrapper start -->
 		<!-- ================ -->
 		<div class="page-wrapper">
@@ -994,6 +988,12 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 
 
 
+
+
+
+
+
+
 <div class="container-fluid theme-border" id="page-wrapper"> 
 
 
@@ -1209,12 +1209,12 @@ Email: <a href="mailto:esawebmaster@doc.gov">ESAwebmaster@doc.gov</a>
 	</div>
  <script type="text/javascript">
 <!--//--><![CDATA[//><!--
-var addtdis_config = {"pubid":"ra-4e2ec8785ab49002","services_compact":"blogger,digg,email,facebook,google_plusone_share,reddit,twitter,yahoobkm,more","data_track_clickback":true,"ui_508_compliant":false,"ui_click":false,"ui_cobrand":"","ui_delay":0,"ui_header_background":"","ui_header_color":"","ui_open_windows":false,"ui_use_css":true,"ui_use_addressbook":false,"ui_language":"en"}
-var addtdis_share = {"templates":{"twitter":"{{title}} {{url}} via @Addtdis"}}
+var addthis_config = {"pubid":"ra-4e2ec8785ab49002","services_compact":"blogger,digg,email,facebook,google_plusone_share,reddit,twitter,yahoobkm,more","data_track_clickback":true,"ui_508_compliant":false,"ui_click":false,"ui_cobrand":"","ui_delay":0,"ui_header_background":"","ui_header_color":"","ui_open_windows":false,"ui_use_css":true,"ui_use_addressbook":false,"ui_language":"en"}
+var addthis_share = {"templates":{"twitter":"{{title}} {{url}} via @Addthis"}}
 //--><!]]>
 </script>
-<script type="text/javascript" src="http://s7.addtdis.com/js/300/addtdis_widget.js#pubid=ra-4e2ec8785ab49002&amp;async=1"></script>
-<script type="text/javascript" src="http://www.esa.doc.gov/sites/all/modules/addtdis/addtdis.js?o3qemm"></script>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e2ec8785ab49002&amp;async=1"></script>
+<script type="text/javascript" src="http://www.esa.doc.gov/sites/all/modules/addthis/addthis.js?o3qemm"></script>
 <script type="text/javascript" src="http://www.esa.doc.gov/modules/statistics/statistics.js?o3qemm"></script>
 <script type="text/javascript" src="http://www.esa.doc.gov/sites/all/themes/icompany/js/bootstrap.js?o3qemm"></script>
  
@@ -1227,16 +1227,16 @@ var addtdis_share = {"templates":{"twitter":"{{title}} {{url}} via @Addtdis"}}
   	
 	$('.portfolio-hover').each(function(){
 		
-		/* move tdis in image container */
-		var portolioImageContainer = $(tdis).siblings('.views-field ').find('.tdumbnail .portfolio-image');
-		$(tdis).appendTo(portolioImageContainer);
+		/* move this in image container */
+		var portolioImageContainer = $(this).siblings('.views-field ').find('.tdumbnail .portfolio-image');
+		$(this).appendTo(portolioImageContainer);
 		
 		/* add styles */
-		var portolioImageContainerHeight = $(tdis).parent().height();
-		var portolioImageContainerwidth = $(tdis).parent().width();
+		var portolioImageContainerHeight = $(this).parent().height();
+		var portolioImageContainerwidth = $(this).parent().width();
 		
 		/* set width and height 
-		$(tdis).css({
+		$(this).css({
 			width: portolioImageContainerwidth,
 			height: portolioImageContainerHeight,
 		})
