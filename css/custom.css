@@ -473,6 +473,20 @@ ul.social-links li {
 	padding-left: 150px
 }
 
+.container.modal.fade.in {
+    /* background-color: transparent; */
+    box-shadow: none;
+    border: none;
+}
+
+.modal.fade {
+/*    -webkit-transition: opacity .3s linear, top .3s ease-out;
+    -moz-transition: opacity .3s linear, top .3s ease-out;
+    -o-transition: opacity .3s linear, top .3s ease-out;
+    transition: opacity .3s linear, top .3s ease-out;*/
+    top: -25%;
+    background-color: transparent;
+}
 
 /* Grow */
 .hvr-grow {
