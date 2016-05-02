@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -292,7 +291,6 @@ body.icompany, #wap-menu ul.sf-menu li span.tip a, .ei-title h3, #main_slider .s
 		}
 		</style>
 	<![endif]-->
-	<!-- CDAC STYLE SHEETS ARE GOING HERE -->
 
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="http://www.esa.doc.gov/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon">
@@ -303,6 +301,10 @@ body.icompany, #wap-menu ul.sf-menu li span.tip a, .ei-title h3, #main_slider .s
 		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+
+        <!--LEAFLET CSS-->
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+
 
 		<!-- Bootstrap core CSS -->
 		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -326,10 +328,14 @@ body.icompany, #wap-menu ul.sf-menu li span.tip a, .ei-title h3, #main_slider .s
 		<link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css">
 		<link href="plugins/hover/hover-min.css" rel="stylesheet">		
 		<link href="plugins/jquery.countdown/jquery.countdown.css" rel="stylesheet">
+		<!-- the Project core CSS file -->
+		<!-- <link href="css/style.css" rel="stylesheet" > -->
+		<!-- Color Scheme (In order to change the color scheme, replace the blue.css witd the color scheme tdat you prefer)-->
+		<!-- <link href="css/skins/orange.css" rel="stylesheet"> -->
+		
+
 		<!-- Custom css --> 
 		<link href="css/custom.css" rel="stylesheet">
-
-
 
 
 			<script type="text/javascript" src="http://www.esa.doc.gov/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
@@ -713,309 +719,259 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 
 
 <section class="no-trans front-page   ">
-
-		<!-- scrollToTop -->
-		<!-- ================ -->
-		<!-- <div class="scrollToTop circle"><i class="icon-up-open-big"></i></div> -->
 		
 		<!-- page wrapper start -->
 		<!-- ================ -->
 		<div class="page-wrapper">
 		
-			<!-- banner start -->
-			<!-- ================ -->
-<!-- 			<div class="banner header-top clearfix bannerBackground" style="height:400px">
-				<h1>CDAC Homepage</h1>
-				<h3>Here to help Commerce</h3>
-			
 
+			<div class="jumbotron container" style="height: 500px;" id="">
+			    <div class="headtext ">
+                    <h2> <span style = "font-size: 180%;">COMMERCE DATA<br> ADVISORY COUNCIL</span></h2>
+                    <h4> <span style = "">Tune in to hear the brightest minds in tech and <br>data advise on the  future of data-driven public service</span></h4>
+                    <h4><strong>May 5 + 6, 2016 @ Google - NYC</strong></h4>
+                
+                    <div class="counter" style="font-family:HelveticaNeue-Light">
+                        <h3><div id="countdown"></div></h3>
+                        </div><br> <!-- /.Counter Div -->
+                </div>
+                
+                <div style="text-align:center">
+                    <a href="http://www.eventbrite.com/o/economic-and-statistics-administration-department-of-commerce-8227114475"><button type="button" class="btn btn-default" style = "font-family:HelveticaNeue-Light">Register</button></a>
+                    <button type="button" class="btn btn-default" style = "font-family:HelveticaNeue-Light">Live Stream</button>
+                     <button type="button" class="btn btn-default" style = "font-family:HelveticaNeue-Light">May 2016 Agenda</button>
+                </div>
 			</div>
-			
-			-->
-<!-- 			<div class="container-">
-				<div class="fullwidthbanner">
-					<h1 class="bannerTextLine1">CDAC</h3>
-					<h1 class="bannerTextLine2">More CDAC</h3>
-				</div>
-			</div> -->
-
-			<div class="jumbotron" style="height: 500px" id="headerSection">
-			    <div class="logo"></div>
-			    <div class="container">
-			    </div>
-
-			<!-- countdown start -->
-			
-			<!-- countdown end --> 
-			</div>
-			
-			
-			<div>
-				<nav> 
-					<ul class="navigation">
-						<li class="btn btn-default"><a href="index.html">Home</a></li>
-						<li class="btn btn-default"><a href="meeting.html">Meetings</a></li>
-						<li class="btn btn-default"><a href="profiles.html">Membership</a></li>
-						<li class="btn btn-default"><a href="#contactUs">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-			
-
-			<div class="meetingSection clearfix">
-				<div class="countdownSection">
-					<h4>The next meeting of CDAC will be held in:</h4>
-					<div class="countdown clearfix"></div>
-				</div>
-<!-- 				<div class="natureImages">
-				    <div><img src="images/sliderPics/boat.jpg"></div>
-				    <div><img src="images/sliderPics/buildings.jpg"></div>
-				    <div><img src="images/sliderPics/grass.jpg"></div>
-				    <div><img src="images/sliderPics/boat.jpg"></div>
-				    <div><img src="images/sliderPics/buildings.jpg"></div>
-				</div>
-				<div class="carouselArrows"></div> -->
-
-
-				<div id="meetingInformation">
-					<h2> May 5-6, 2016</h2>
-					<h2> Google Office - New York</h2>
-					<h3>76 9th Ave.</h3>
-					<h3>New York, NY 10011</h3>				
-				</div>
-
-				<div id="meetingLinks">
-					<a href="#"><h3> Agenda </h3></a>
-					<a href="http://www.eventbrite.com/o/economic-and-statistics-administration-department-of-commerce-8227114475"><h3> Register to Attend</h3></a>
-					<a href="meeting.html"><h3> Meeting Information </h3></a><br>
-					<a href="#" style="padding-bottom: 40px"><h3> CDAC Meeting Live Streaming </h3></a>
-				</div>
-
-				<div id="meetingArchivesLink">
-					<a href="meeting.html"><h5> Meeting Archives</h5></a>
-				</div>
-			</div>
-
-
-			<!-- MISSION SECTION START -->
-			<section class="clearfix" id="missionSection">
+                
+            <!--WHAT IS CDAC?-->
+            <section style="background-color:white" class="container-fluid">
 				
 				<!-- <div class="missionTitle"></div> -->
-				<div class="missionStatements">
-				    <div class="missionTextDiv">
-						<h1>MISSION</h1>
+				<div class="row cent " ><br>
+                     <h2 ><span style="font-size:140%; color:slategrey"><strong>WHAT IS</strong><img src="images/cdac-logo-final2.png" style=" height:100px;"> <strong>?</strong></span></h2>
+                    <h5 ><span style="font-size:140%; color:slategrey">MISSION + GOALS</span></h5>
+                    
+                    <div  class=" col-lg-1 col-md-1" ></div>
+                    <div  class=" col-lg-10 col-md-10" style="text-align:left;font-size:120%">
+                        <p><strong>The Department of Commerce collects, processes, and disseminates approximately 36% of the federal open data. That data fuels planning, research and operations that support society and the economy. </strong>Commerce is continuously working to improve in its delivery of services. To help guide the Department's efforts, Secretary of Commerce Penny Pritzker has assembled the Commerce Data Advisory Council (CDAC). The CDAC provides expert guidance and insight to the Department of Commerce's data leadership, covering a wide range of pressing issues in data and technology: </p><br>
+                    </div>
+                    <div  class=" col-lg-1 col-md-1" ></div>
+                </div>
+                
+                <div  class="row">
+                        <div  class=" col-lg-1 col-md-1" ></div>
+                        <div  class=" col-lg-5 col-md-5 " style="text-align:left;;font-size:120%">
+                            <ul>
+                            <li><strong>Data management practices</strong> that make it easier to rack and disseminate integrated interoperable data for diverse users<br><br></li>
+                            <li>Best practices that can be deployed across Commerce to achieve <strong>common, open standards</strong> related to taxonomy, vocabulary, APIs metadata, and other key data characteristics<br><br></li>
+                            <li><strong>Policy issues that arrive from expanding access to data</strong>, including issues related to privacy, latency, and consistency<br><br></li>
+                            
+                        </ul></div>
+                        <div  class=" col-lg-5 col-md-5" style="text-align:left;;font-size:120%"><ul>
+                            <li>Opportunities and risks related to the combination of public and private data sources and the development of joint data products and services resulting from public-private partnerships<br><br></li>
+                            <li>External uses of Commerce data and similar federal, state, and private data sets by businesses<br><br></li>
+                            <li>Methods to enhance communication and collaboration between stakeholders and subject-matter experts at Commerce on data access and use<br><br></li>
+                        </ul></div>
+                        <div  class=" col-lg-1 col-md-1" ></div>
+                </div>
+                <div class="row">
+                    <div  class=" col-lg-1 col-md-1" ></div>
+                    <div  class=" col-lg-10 col-md-10" > 
+                        <p style="text-align:left;font-size:120%"><strong>Council meetings are held on a quarterly basis. Members of the public may observe the proceedings in person or via live stream.</strong> </p>
+                    </div>  
+                    <div  class=" col-lg-1 col-md-1" ></div>       
+                   
+                </div>
+            </section>
+                    
+                    
+                
+               
+            <!--MIDDLE IMAGE-->
+                <section style="background-color:white" class="container-fluid">
+				    
+        
+                    
+             <!--MEMBERSHIP--> 
+         
+                    
+                <div class = "cent">
+                    <div style="background-color:#6AABFC">
+			             <h2 ><span style="font-size:140%; color:white;"> COUNCIL MEMBERS</span></h2>
+                        </div> 
+                <div class="row " >
+                    <div  class=" col-lg-2 col-md-4 col-sm-6">
+                            <img width = "100%"src="img/Kalin-Ian.png"> IAN KALIN, CHIEF DATA OFFICER, COUNCIL MEETING FACILITATOR
+                    </div>
 
-					    <p>The CDAC provides Secretary Pritzker and the DOC data-bureau leadership with guidance on areas such as data management practices; common, open data standards; policy issues related to privacy, latency, and consistency; effective models for public-private partnership; external uses of Commerce data; and, methods to build new feedback loops between the Department and data users. 
+                    <div  class=" col-lg-2 col-md-4 col-sm-6">
+                        <img width = "100%"src="img/kim_stevenson_intel_0.jpg">KIM STEVENSON, INTEL, COUNCIL CHAIR (2015-2016)
+                    </div>
+                    <div  class=" col-lg-2 col-md-4 col-sm-6">
+                        <img width = "100%"src="img/2015-daniel-castro.jpeg">DAN CASTRO, CENTER FOR DATA INNOVATION, COUNCIL CHAIR (2015-2016)
+                    </div>
+                    <div  class=" col-lg-2 col-md-4 col-sm-6">
+                        <img width = "100%"src="img/BRIAN_SCHIMPF.jpg">BRIAN SCHIMPF, PALANTIR, GLOBAL DIRECTOR OF ENGINEERING
+                    </div>
+                     <div  class=" col-lg-2 col-md-4 col-sm-6">
+                         <img width = "100%"src="img/Steven-Adler_IBM-1.jpeg">STEVE ADLER, IBM, CHIEF INFORMATION STRATEGIST
+                    </div>
+                    <div  class=" col-lg-2 col-md-4 col-sm-6">
+                        <img width = "100%"src="img/allen-blue.png">ALLEN BLUE, LINKEDIN, CO-FOUNDER + VP
+                    </div>
+                </div>
+                <div class="row " >
+                    <div  class=" col-lg-2 col-md-4 col-sm-6">
+                        <img width = "100%"src="img/Joy+Bonaguro.jpg">JOY BONAGURO, CITY OF SAN FRANCISCO, CHIEF DATA OFFICER
+                    </div>
+                    <div  class=" col-lg-2 col-md-4 col-sm-6">
+                        <img width = "100%"src="img/katyborner.jpg">KATY BÖRNER, INDIANA UNIVERSITY, PROFESSOR, INFORMATION SCIENCES
+                    </div>
+                    <div  class=" col-lg-2 col-md-4 col-sm-6">
+                        <img width = "100%"src="img/danah_photo.jpg">DANAH BOYD, MICROSOFT, PRINCIPAL RESEARCH, PRIVACY EXPERT
+                    </div>
+                      <div  class=" col-lg-2 col-md-4 col-sm-6">
+                          <img width = "100%"src="img/2015-11-11-Photo-Jack-Dangermond.jpg">JACK DANGERMOND, ESRI, CEO
+                    </div>
+                     <div  class=" col-lg-2 col-md-4 col-sm-6">
+                         <img width = "100%"src="img/chris-dibona.jpg">CHRISTOPHER DIBONA, GOOGLE, DIRECTOR OF OPEN SOURCE ENGINEERING
+                    </div>
+                    <div  class=" col-lg-2 col-md-4 col-sm-6">
+                        <img width = "100%"src="img/William-B.-Gail_2015-headshot_sm-681x1024.jpg">BILL GAIL, GLOBAL WEATHER CORPORATION, CTO
+                    </div>
+                </div>
+                <div class="row" >
+                     <div  class=" col-lg-2 col-md-4 col-sm-6">
+                         <img width = "100%"src="img/stan_humphries.png">STAN HUMPHRIES, ZILLOW, CHIEF ECONOMIST
+                    </div>
+                    <div  class=" col-lg-2 col-md-4 col-sm-6">
+                        <img width = "100%"src="img/heather_joseph.jpg">HEATHER JOSEPH, SPARC, DIRECTOR
+                    </div>
+                    <div  class=" col-lg-2 col-md-4 col-sm-6">
+                        <img width = "100%"src="img/vadim-kutsyy.jpg">VADIM KUTSYY, PAYPAL, HEAD OF DATA STRATEGY AND STEWARDSHIP
+                    </div>
+                    <div  class=" col-lg-2 col-md-4 col-sm-6">
+                        <img width = "100%"src="img/2014-kevin-merritt.jpg">KEVIN MERRITT, SOCRATA, CEO
+                    </div>
+                    <div  class=" col-lg-2 col-md-4 col-sm-6">
+                        <img width = "100%"src="img/CJ_Moses_Pic.jpeg">CJ MOSES, AMAZON WEB SERVICES, GENERAL MANAGER
+                    </div>
+                    <div  class=" col-lg-2 col-md-4 col-sm-6">
+                        <img width = "100%"src="img/Pahlka.jpg">JENNIFER PAHLKA, CODE FOR AMERICA
+                    </div>
+                    
+                    </div>
+                    <div class="row " >
+                        <div  class=" col-lg-2 col-md-4 col-sm-6">
+                            <img width = "100%"src="img/colin%20parris.jpg">COLIN PARRIS, GE, CVP SOFTWARE RESEARCH
+                        </div>
+                        <div  class=" col-lg-2 col-md-4 col-sm-6">
+                            <img width = "100%"src="img/Karin-Remington.png">KARIN REMINGTON, ARJUNA SOLUTIONS, CTO
+                        </div>
+                        <div  class=" col-lg-2 col-md-4 col-sm-6">
+                            <img width = "100%"src="img/reist-burton.png">BURTON REIST, ESA, CDAC DESIGNATED FEDERAL OFFICIAL (DFO)
+                        </div>
+                </div>
+                </div>
+                
+                </section>
 
-						The Council meets up to four times a year.  Council meetings are facilitated by the Chief Commerce Data Officer, Ian Kalin along with CDAC Co-Chairs, Daniel Castro and Kim Stevenson. </p>
-					</div>
 
-				    <div class="missionTextDiv">
-				    	<h1>GOALS</h1>
-					    <ul>
-					    	<li>Data management practices that make it easier to rack and disseminate integrated interoperable data for diverse users</li>
-					    	<li>Best practices that can be deployed across Commerce to achieve common, open standards related to taxonomy, vocabulary, APIs metadata, and other key data characteristics</li>
-					    	<li>Policy issues that arrive from expanding access to data, including issues related to privacy, latency, and consistency</li>
-					    	<li>Opportunities and risks related to the combination of public and private data sources and the development of joint data products and services resulting from public-private partnerships</li>
-					    	<li>External uses of Commerce data and similar federal, state, and private data sets by businesses</li>
-					    	<li>Methods to enhance communication and collaboration between stakeholders and subject-matter experts at Commerce on data access and use</li>
-					    </ul>
-				    </div>
-				</div>
-			</section>
-			<!-- MISSION SECTION END -->
+
 
 			<!-- NEWS SECTION START -->
-			<div class="pv-40 dark-translucent-bg parallax clearfix newsFromCDACContainer" id="newsFromCDAC">
-				<h2 class="newsFromCDACTitle">News from CDAC</h2>
-				<div class="carouselStyle">
-					<div class="container">
-						<h3 class="logo-font text-center">Doing More with Data</h3>
-						<div class="separator"></div>
-						<div class="row">
-							<div class="col-md-12">
-								<ul class="list">
-									<li class="clearfix">
-								    <a href="http://www.esa.doc.gov/under-secretary-blog/doing-more-data"><img src="images/blogpost_icon.png" style="height: 200px"></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="space-bottom"></div>
-					</div>
-					<div class="container">
-						<h3 class="logo-font text-center">Weather Data, Cybersecurity and Workforce Skills Focus of Upcoming Data Advisory Council</h3>
-						<div class="separator"></div>
-						<div class="row">
-							<div class="col-md-12">
-								<ul class="list"> 
-									<li class="clearfix">
-										<a href="http://www.esa.doc.gov/under-secretary-blog/weather-data-cybersecurity-and-workforce-skills-focus-upcoming-data-advisory-0"><img src="images/blogpost_icon.png" style="height: 200px"></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="space-bottom"></div>
-					</div>
-						<div class="container">
-							<div class="row">
-						<h3 class="logo-font text-center">Council Advises Continued Data Improvements</h3>
-						<div class="separator"></div>
-						<div class="row">
-							<div class="col-md-12">
-								<ul class="list">
-									<li class="clearfix">
-										<a href="https://www.commerce.gov/news/blog/2015/08/council-advises-continued-data-improvements"><img src="images/blogpost_icon.png" style="height: 200px"></a>
-									</li>
-								</ul>
-							</div>
-							</div>
-						</div>
-						<div class="space-bottom"></div>
-					</div>
-					<div class="container">
-						<h3 class="logo-font text-center">Commerce Data Advisory Committee Launches Efforts to Improve U.S. Exports</h3>
-						<div class="separator"></div>
-						<div class="row">
-							<div class="col-md-12">
-								<ul class="list">
-									<li class="clearfix">
-										<a href="https://www.commerce.gov/news/blog/2015/08/commerce-data-advisory-committee-launches-efforts-improve-us-exports"><img src="images/blogpost_icon.png" style="height: 200px"></a>
-									</li>
-								</ul>
-							</div>
-						</div>
+                
+                <section style="background-color:#white; " class="cent container-fluid">
+                     <div class = "cent">
+                    <div style="background-color:#6AABFC">
+			             <h2 ><span style="font-size:140%; color:white;"> NEWS + TRENDING</span></h2>
+                        </div> 
+                <div class="row no-gutter " style="text-align:left">
+                    <div  class=" col-lg-1 col-md-1" ></div>  
+                    <div  class=" col-lg-5 col-md-4 col-sm-6">
+                        <div class="row no-gutter" >
+                            <div  class=" col-lg-10 col-md-4 col-sm-6">
+                                <img width = "160px" class = "textwrap" src="img/article_nov2015.png"><br>
+                                <a href="https://www.esa.doc.gov/under-secretary-blog/doing-more-data"><span style="font-size:120%"><strong>DOING MORE WITH DATA </strong></span></a><br>
+                                <small>November 5, 2015 </small><br>
+                                    <p>Leaders from the nation's technology and data industries came together on Oct. 29-30 for the third meeting of the Commerce Data Advisory Council (CDAC) in Boulder, Colorado.  This meeting focused on three main themes ...</p> 
+                            </div>
+                            <div  class=" col-lg-10 col-md-4 col-sm-6">
+                                <img width = "160px" class = "textwrap" src="img/article_oct2015.png"><br>
+                                <a href="https://www.esa.doc.gov/under-secretary-blog/doing-more-data"><span style="font-size:120%"><strong>BUILDING MOMENTUM </strong></span></a><br>
+                                <small>October 29, 2015 </small><br>
+                                    <p>With a deep bench of experts, the Data Advisory Council is ramping up to discuss weather data initiatives, cybersecurity issues, workforce skills...</p> 
+                            </div>
+                            <div  class=" col-lg-10 col-md-4 col-sm-6">
+                                <img width = "160px" class = "textwrap" src="img/article_july2015.jpg"><br>
+                                <a href="https://www.commerce.gov/news/blog/2015/08/council-advises-continued-data-improvements"><span style="font-size:120%"><strong>COUNCIL ADVISES CONTINUED DATA IMPROVEMENTS </strong></span></a><br>
+                                <small>August 12, 2015 </small><br>
+                                    <p>On July 30th, the Commerce Data Advisory Council  convened its second meeting to review and provide guidance on the Department of Commerce's data.  This one-of-a-kind gathering of digital technology executives ...</p> 
+                            </div>
+                            <div  class=" col-lg-10 col-md-4 col-sm-6">
+                                <a href="news-archive.html"><button type="button" class="btn btn-default" style = "font-family:HelveticaNeue-Light">More News</button></a>
+                            </div>
+                            
+                        </div> 
+                        
+                    </div>
+                    <div class="row no-gutter" >
+<a class="twitter-timeline" href="https://twitter.com/hashtag/CDACMTG" data-widget-id="651372443983060993">#CDACMTG Tweets</a> 
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+                        </div>
+                    <div  class=" col-lg-1 col-md-1" ></div>       
+                   
+                </div>
+                </section>
 			
-						<div class="space-bottom"></div>	
-					</div>
-				</div>
-				
-			</div>
-			<!-- NEWS SECTION end -->
-
-			<!-- TWITTER SECTION START -->
-			<div class="CDACTwitter">
-				<div class="container-fluid" style="text-align: center">
-				<div class="twitterDiv">
-				<div class="col-md-3 col-sm-3" style="display:inline-block;"><img src="images/Twitter_logo_blue.png" class="twitterImage img-responsive"></div>
-				<a class="twitter-timeline col-md-9 col-sm-4 text-center" style="display:inline-block" href="https://twitter.com/hashtag/CDACMTG" data-widget-id="722851728702353409" data-chrome="nofooter" data-tweet-limit="1">#CDACMTG Tweets</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-				</div>
-				</div>
-			</div>
-
-			<footer id="footer" class="clearfix dark footerStyle">
-			<!-- TWITTER SECTION END-->
-
-
-			<!-- section start -->
-			<!-- ================ -->
-			<section class="section clearfix" id="memberProfileSection">
-				<div class="container">
-					<h2 class="logo-font text-center text-muted">Member Profiles</h2>
-					<p class="lead text-center">Get to know the Council Leads by clicking on a profile picture!</p>
-					<div class="memberProfiles">
-					<!-- Tab panes -->
-					
-						<div class="tab-content clear-style">
-							<div class="tab-pane active" id="pill-1">
-								<div class="row">
-									<div class="col-md-4">
-										<div class="image-box text-center style-2 mb-20">
-											<a href="profiles.html"><img src="images/ian_kalin_pic.jpg" alt="" class="img-circle img-thumbnail"></a>
-											<div class="body padding-horizontal-clear">
-												<h4 class="logo-font title">Ian Kalin</h4>
-												<p class="small mb-10">Chief Commerce Data Officer</p>
-												<p class="lead text-default">Council Meeting Facilitator</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="image-box text-center style-2 mb-20">
-											<a href="profiles.html"><img src="images/stevenson-kim.png" alt="" class="img-circle img-thumbnail"></a>
-											<div class="body padding-horizontal-clear">
-												<h4 class="logo-font title">Kim Stevenson</h4>
-												<p class="small mb-10">Intel</p>
-												<p class="lead text-default">CDAC Co-Chair</p>
-												<p>(2015-2016)</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="image-box text-center style-2 mb-20">
-											<a href="profiles.html"><img src="images/castro-daniel.png" alt="" class="img-circle img-thumbnail"></a>
-											<div class="body padding-horizontal-clear">
-												<h4 class="logo-font title">Daniel Castro</h4>
-												<p class="small mb-10">Center for Data Innovation</p>
-												<p class="lead text-default">CDAC Co-Chair</p> 
-												<p>(2015-2016)</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</div>
-					<!-- pills end -->
-					</div>
-					<div class="memberProfileLink"><a href="profiles.html"><h5>More Member Profiles</h5></a></div>
-				</div>				
-			</section>
-			<!-- section end -->
 
 
 
 				<!-- .footer start -->
 				<!-- ================ -->
-				<div class="footer">
+				<div class="footer"> <div style="background-color:#6AABFC; text-align:center">
+			             <h2 ><span style="font-size:140%; color:white;"> ABOUT CDAC</span></h2>
+                        </div> 
 					<div class="container aboutCDACSection">
 						<div class="footer-inner">
-							<!-- <div class="row"> -->
-								<div class="col-md-6">
-									<div class="footer-content">
-										<div class="logo-footer"><img id="logo-footer" src="images/cdac-logo.png" alt=""></div>
-										<div class="row">
-											<div class="">
-												<h2>ABOUT CDAC</h2>
-                                                   <p>The CDAC consists of up to 20 members representing the entire spectrum of Commerce data including demographic, economic, scientific, environmental, patent, and geospatial data. These leaders come from the information technology, NGO, non-profit, and academic communities, and from local governments—leaders who appreciate the range of data that the Department of Commerce distributes and the full lifecycle of data collection, compilation, analysis, and dissemination. They offer a balanced perspective and varied expertise to ensure meaningful dialogue and guidance on how the Commerce Department can realize its vision as America's Data Agency.</p>
-											</div>
-											<div class="">
-												<div id="footerLinks">
-													<a href="#meetingInformation"><p> Meetings </p></a>
-													<a href="#missionSection"><p> Mission and Goals </p></a>
-													<a href="#newsFromCDAC"><p> News from CDAC </p></a>
-													<a href="#memberProfileSection"><p> Membership </p></a>
-													<a href="faca-documentation.html"><p>FACA Documentation</p></a>
-												</div>
-											</div>
-											
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="footer-content">
-										<div class="contactUs" id="contactUs">
-												<div class="contactUs">
-													<h4>Contact Us</h4>
-													<div><i class="fa fa-male"></i><a href="#">Burton Reist</a></div>
-													<div>Director of External Affairs and Designated Federal Official, CDAC</div>
-													<div><i class="fa fa-fa-location-arrow"></i>Department of Commerce</div>
-													<div>Economics and Statistics Administration</div>
-													<div>1401 Constitution Ave NW</div>
-													<div>Washington, DC 20230</div>
-													<div><i class="fa fa-phone pr-10 text-default"></i> (202) 482-3331</div>
-													<div><i class="fa fa-envelope-o pr-10"></i><a href="mailto:CDAC@doc.gov" style="text-decoration: underline; padding-top: 5px">CDAC@doc.gov</a></div>
-												</div>
-										</div>
-									</div>
-								</div>
-							<!-- </div> -->
+                            
+                        <div  class="row">
+                        	<div  class=" col-lg-1 col-md-1" ></div>
+                        	<div  class=" col-lg-5 col-md-5 " style="text-align:left;">
+                        
+								<h4>About</h4>				
+	                            <p>The CDAC consists of up to 20 members representing the entire spectrum of Commerce data including demographic, economic, scientific, environmental, patent, and geospatial data. These leaders come from the information technology, NGO, non-profit, and academic communities, and from local governments—leaders who appreciate the range of data that the Department of Commerce distributes and the full lifecycle of data collection, compilation, analysis, and dissemination. They offer a balanced perspective and varied expertise to ensure meaningful dialogue and guidance on how the Commerce Department can realize its vision as America's Data Agency.</p>
+	                        
+	                            <div id="footerLinks">
+	                                <a href="meeting.html"><button type="button" class="btn btn-default" style = "font-family:HelveticaNeue-Light">Past Meetings</button></a>
+	                                <a href="faca-documentation.html"><button type="button" class="btn btn-default" style = "font-family:HelveticaNeue-Light">FACA Documentation</button></a>
+
+	                            </div>
+                     
+                        	</div>
+                        
+                        <div  class=" col-lg-5 col-md-5" style="text-align:left;">
+                           
+                                <h4>Contact Us</h4>
+                                <div>
+                                    <a href="#"><strong>Burton Reist</strong></a>
+                                       <br>Director of External Affairs and Designated Federal Official, CDAC
+                                       <br><i class="fa fa-fa-location-arrow"></i>Department of Commerce
+                                       <br>Economics and Statistics Administration
+                                       <br>1401 Constitution Ave NW
+                                       <br>Washington, DC 20230
+                                       <br><i class="fa fa-phone pr-10 text-default"></i> (202) 482-3331
+                                       <br><i class="fa fa-envelope-o pr-10"></i><a href="mailto:CDAC@doc.gov" style="text-decoration: underline; padding-top: 5px">CDAC@doc.gov</a>
+                                </div>
 						</div>
+                        <div  class=" col-lg-1 col-md-1" ></div>
+                        </div>
+                	</div>
 					</div>
 				</div>
 				<!-- .footer end -->
 
-			</footer>
+			
 			<!-- footer end -->
 			
 		</div>
@@ -1056,7 +1012,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 
   <div class="content"><a style="color:#FFF; margin-top: 15px;" class="btn pull-right btn-theme" href="https://service.govdelivery.com/accounts/USESAEI/subscriber/new/" target="_blank">Subscribe</a>
 <p style="font-size:24px; font-weight:300; font-family:Lato; margin-top: 10px; margin-bottom:10px;">Subscribe to Economic Indicators</p>
-<p>Subscribe witd your email address to stay up-to-date witd our economic indicators!</p>
+<p>Subscribe with your email address to stay up-to-date with our economic indicators!</p>
 </div>
 </div>
   </div>
@@ -1371,5 +1327,82 @@ var addtdis_share = {"templates":{"twitter":"{{title}} {{url}} via @Addtdis"}}
 		<!-- Custom Scripts -->
 		<script type="text/javascript" src="js/custom.js"></script>
 
+<!--LEAFLET-->
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	<script>
+
+		var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
+		L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw', {
+			maxZoom: 18,
+			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+				'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+				'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+			id: 'mapbox.streets'
+		}).addTo(mymap);
+
+
+		L.marker([51.5, -0.09]).addTo(mymap)
+			.bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
+
+		L.circle([51.508, -0.11], 500, {
+			color: 'red',
+			fillColor: '#f03',
+			fillOpacity: 0.5
+		}).addTo(mymap).bindPopup("I am a circle.");
+
+		L.polygon([
+			[51.509, -0.08],
+			[51.503, -0.06],
+			[51.51, -0.047]
+		]).addTo(mymap).bindPopup("I am a polygon.");
+
+
+		var popup = L.popup();
+
+		function onMapClick(e) {
+			popup
+				.setLatLng(e.latlng)
+				.setContent("You clicked the map at " + e.latlng.toString())
+				.openOn(mymap);
+		}
+
+		mymap.on('click', onMapClick);
+
+	</script>
+         <script type="text/javascript">
+            // set the date we're counting down to
+        var target_date = new Date('May 5, 2016').getTime();
+
+        // variables for time units
+        var days, hours, minutes, seconds;
+
+        // get tag element
+        var countdown = document.getElementById('countdown');
+
+        // update the tag with id "countdown" every 1 second
+        setInterval(function () {
+
+            // find the amount of "seconds" between now and target
+            var current_date = new Date().getTime();
+            var seconds_left = (target_date - current_date) / 1000;
+
+            // do some time calculations
+            days = parseInt(seconds_left / 86400);
+            seconds_left = seconds_left % 86400;
+
+            hours = parseInt(seconds_left / 3600);
+            seconds_left = seconds_left % 3600;
+
+            minutes = parseInt(seconds_left / 60);
+            seconds = parseInt(seconds_left % 60);
+
+            // format countdown string + set tag value
+            countdown.innerHTML = '<span class="days"><b>' + days +  '</b> days </span> <span class="hours"><b>' + hours + '</b> hours </span> <span class="minutes"><b>'
+            + minutes + '</b> minutes </span> <span class="seconds"><b>' + seconds + '</b> seconds </span>';  
+
+        }, 1000);
+            </script>
 </body>
 </html>
+>>>>>>> gh-pages
