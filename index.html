@@ -725,6 +725,11 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
                     <h4> <span style = "">Tune in to hear the brightest minds in tech and <br>data advise on the  future of data-driven public service</span></h4>
                     <h4><strong>May 5 + 6, 2016 @ Google - NYC</strong></h4>
 
+                    <div class="counter" style="font-family:HelveticaNeue-Light">
+                        <h3><div id="countdown"></div></h3>
+                        </div><br> <!-- /.Counter Div -->
+                </div>
+                    
                     <div style="text-align:center; padding-top: 20px">
                     <a href="http://www.eventbrite.com/o/economic-and-statistics-administration-department-of-commerce-8227114475" target="_blank"><button type="button" class="btn btn-default" style = "font-family:HelveticaNeue-Light">Register</button></a>
                      <a href="https://s3.amazonaws.com/cds-cdac/May+2016/CDACAgenda-NYC-2016-05-2.pdf" target="_blank"><button type="button" class="btn btn-default" style = "font-family:HelveticaNeue-Light">May 2016 Agenda</button></a>
@@ -732,11 +737,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
                 
 
                 </div>
-                <div style="display: inline-block;">
-                	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/N9hXFsnV2mM" frameborder="0" allowfullscreen></iframe>
 
-				</div>
-			</div>
                 
             <!--WHAT IS CDAC?-->
             <section style="background-color:white" class="container-fluid">
@@ -1812,7 +1813,7 @@ var addthis_share = {"templates":{"twitter":"{{title}} {{url}} via @Addthis"}}
             seconds = parseInt(seconds_left % 60);
 
             // format countdown string + set tag value
-            countdown.innerHTML = '<span class="days"><b>' + days +  '</b> days </span> <span class="hours"><b>' + hours + '</b> hours </span> <span class="minutes"><b>'
+            countdown.innerHTML = '<span class="days"><b>' + days +  '</b> day </span> <span class="hours"><b>' + hours + '</b> hours </span> <span class="minutes"><b>'
             + minutes + '</b> minutes </span> <span class="seconds"><b>' + seconds + '</b> seconds </span>';  
 
             }
