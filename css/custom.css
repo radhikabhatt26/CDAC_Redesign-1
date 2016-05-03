@@ -11,6 +11,10 @@ File Description: Place here your custom CSS styles
 
 
 /*Make the ESA header and footer full-width and other things*/
+body{
+	background-color: white;
+}
+
 .container-fluid {
 	max-width: none;
 }
