@@ -82,7 +82,8 @@ section.front-page {
     overflow: hidden;
     margin-bottom: 0px;
     padding-top: 60px;
-    padding-bottom: 2px;
+    padding-bottom: 8%;
+    text-align: center;
     
 }
 
@@ -181,9 +182,6 @@ section.front-page {
   }
 }
 
-
-/*Meeting Information Section*/
-/*Credit for texture is from http://www.transparenttextures.com/*/
 
 div.meetingSection {
 	background-color: #white;
@@ -547,3 +545,4 @@ nav > ul > li > a:link, a:hover{
 .page-wrapper .row {
 	margin-right: -1px;
 	margin-left: -10px;
+}

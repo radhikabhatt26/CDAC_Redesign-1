@@ -99,6 +99,6 @@ hr {
 	border-style: hidden;
 }
 
-.presDiv {
-
+#meeting2015Info {
+	display: none;
 }
