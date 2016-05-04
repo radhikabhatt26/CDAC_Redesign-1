@@ -537,7 +537,11 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 <div id="feed1" style="display:none;"></div>
 <div id="feed2" style="display:none;"></div>
 <div id="feed3" style="display:none;"></div>
-<div id="feed4" style="display:none;"></div><!---BEA locked GDP and PI --->
+<div id="feed4" style="display:none;"></div>
+<!-- We participate in the US government's analytics program. See the data at analytics.usa.gov. -->
+<script src="https://dap.digitalgov.gov/Universal-Federated-AnalyticsMin.js?agency=DOC" type="text/javascript" id="_fed_an_ua_tag"></script>
+
+<!---BEA locked GDP and PI --->
 <div id="feed5" style="display:none;"></div>
 <script type="text/javascript" src="/sites/all/themes/icompany/js/indicator.js"></script>
 <script type="text/javascript" src="/sites/all/themes/icompany/js/relschedule.js"></script>
@@ -718,7 +722,6 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 		<!-- ================ -->
 		<div class="page-wrapper" style="background-color: white">
 		
-
 			<div class="jumbotron container" style="text-align: center">
 			    <div class="headtext" style="display:inline-block; vertical-align: top;" >
                     <h2> <span style = "font-size: 180%;">COMMERCE DATA<br> ADVISORY COUNCIL</span></h2>
@@ -726,14 +729,14 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
                     <h4><strong>May 5 + 6, 2016 @ Google - NYC</strong></h4>
                 	<br>
                 	<br>
-                	<button type="button" class="btn btn-default" style = "font-family:HelveticaNeue-Light">May 2016 Agenda</button>
+                	<a href="https://s3.amazonaws.com/cds-cdac/May+2016/CDACAgenda-NYC-2016-05-2.pdf" target="_blank"><button type="button" class="btn btn-default" style = "font-family:HelveticaNeue-Light">May 2016 Agenda</button></a>
                     <br> <!-- /.Counter Div -->
                 </div>
-                
+
                 <div style="display: inline-block;">
                 	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Mz-TmIVXihc" frameborder="0" allowfullscreen></iframe>
                 </div>
-			</div>
+            </div>
                 
             <!--WHAT IS CDAC?-->
             <section style="background-color:white" class="container-fluid">
@@ -779,8 +782,8 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
                     
                 
                
-                <!--MIDDLE IMAGE-->
-               
+                <section style="background-color:white">
+
 				    
         
                     
@@ -972,7 +975,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
                         </div>
                         <div  class=" col-lg-2 col-md-2 col-sm-4">
                             <a href="#Karin" data-toggle="modal" class="hvr-grow">
-                            	<img width = "100%"src="img/karin-remington.png" class="img-circle">
+                            	<img width = "100%"src="img/Karin-Remington.png" class="img-circle">
                             </a>
                             	<p class="member-name">Karin Remington</p>
                             	<p class="member-company"><strong>Arjuna Solutions</strong></p>
@@ -1315,7 +1318,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 								<div class="modal-content">
 										<div class="modal-header">
 										<i class="glyphicon glyphicon-remove" data-dismiss="modal" aria-label="Close" aria-hidden="true"></i>
-										<h4 class="modal-title" id="Karen">Karen Remington</h4></div>
+										<h4 class="modal-title" id="Karin">Karin Remington</h4></div>
 										
 										
 										<div class="modal-body">
@@ -1429,8 +1432,8 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 			<!-- footer end -->
 			
 		</div>
-
-
+<br>
+<br>
 </section>
 
 
@@ -1761,13 +1764,6 @@ var addthis_share = {"templates":{"twitter":"{{title}} {{url}} via @Addthis"}}
 		<script type="text/javascript" src="plugins/jquery.countTo.js"></script>
 		<!-- Parallax javascript -->
 		<script src="plugins/jquery.parallax-1.1.3.js"></script>
-		<!-- Contact form -->
-		<script src="plugins/jquery.validate.js"></script>
-		<!-- Google Maps javascript -->
-		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;signed_in=true"></script>
-		<script type="text/javascript" src="js/google.map.config.js"></script>
-		<!-- Background Video -->
-		<script src="plugins/vide/jquery.vide.js"></script>
 		<!-- Owl carousel javascript -->
 		<script type="text/javascript" src="plugins/owl-carousel/owl.carousel.js"></script>
 		<!-- Slick Carousel -->
@@ -1775,7 +1771,7 @@ var addthis_share = {"templates":{"twitter":"{{title}} {{url}} via @Addthis"}}
 		<script type="text/javascript" src="plugins/slick/slick.js"></script>
 		<!-- SmootdScroll javascript -->
 		<script type="text/javascript" src="plugins/jquery.browser.js"></script>
-		<script type="text/javascript" src="plugins/SmootdScroll.js"></script>
+		<script type="text/javascript" src="plugins/SmoothScroll.js"></script>
 		<!-- Count Down javascript -->
 		<script type="text/javascript" src="plugins/jquery.countdown/jquery.plugin.js"></script>
 		<script type="text/javascript" src="plugins/jquery.countdown/jquery.countdown.js"></script>
@@ -1803,6 +1799,9 @@ var addthis_share = {"templates":{"twitter":"{{title}} {{url}} via @Addthis"}}
             var current_date = new Date().getTime();
             var seconds_left = (target_date - current_date) / 1000;
 
+            if (seconds_left <= 0) {
+            	seconds_left = 0;
+            } else {
             // do some time calculations
             days = parseInt(seconds_left / 86400);
             seconds_left = seconds_left % 86400;
@@ -1814,11 +1813,12 @@ var addthis_share = {"templates":{"twitter":"{{title}} {{url}} via @Addthis"}}
             seconds = parseInt(seconds_left % 60);
 
             // format countdown string + set tag value
-            countdown.innerHTML = '<span class="days"><b>' + days +  '</b> days </span> <span class="hours"><b>' + hours + '</b> hours </span> <span class="minutes"><b>'
+            countdown.innerHTML = '<span class="days"><b>' + days +  '</b> day </span> <span class="hours"><b>' + hours + '</b> hours </span> <span class="minutes"><b>'
             + minutes + '</b> minutes </span> <span class="seconds"><b>' + seconds + '</b> seconds </span>';  
+
+            }
 
         }, 1000);
             </script>
 </body>
 </html>
->>>>>>> gh-pages
