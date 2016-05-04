@@ -11,6 +11,10 @@ File Description: Place here your custom CSS styles
 
 
 /*Make the ESA header and footer full-width and other things*/
+body{
+	background-color: white;
+}
+
 .container-fluid {
 	max-width: none;
 }
@@ -82,7 +86,8 @@ section.front-page {
     overflow: hidden;
     margin-bottom: 0px;
     padding-top: 60px;
-    padding-bottom: 2px;
+    padding-bottom: 8%;
+    text-align: center;
     
 }
 
@@ -181,9 +186,6 @@ section.front-page {
   }
 }
 
-
-/*Meeting Information Section*/
-/*Credit for texture is from http://www.transparenttextures.com/*/
 
 div.meetingSection {
 	background-color: #white;
