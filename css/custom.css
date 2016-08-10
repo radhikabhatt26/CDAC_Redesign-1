@@ -11,6 +11,10 @@ File Description: Place here your custom CSS styles
 
 
 /*Make the ESA header and footer full-width and other things*/
+body{
+	background-color: white;
+}
+
 .container-fluid {
 	max-width: none;
 }
@@ -36,8 +40,23 @@ div.tp-bannertimer {
 	display: none;
 }
 
+.no-gutter [class*="-5"] {
+    padding-left:0;
+    padding-right:0;
+}
+.no-gutter [class*="-3"] {
+    padding-left:0;
+    padding-right:0;
+}
+.no-gutter [class*="-2"] {
+    padding-left:0;
+    padding-right:0;
+}
 
-
+.textwrap{
+    float:left;
+    margin:10px;
+}
 
 /*Applies Century Gothic to just the CDAC website*/
 section.front-page {
@@ -59,14 +78,24 @@ section.front-page {
 /*Jumbotron/Parallax section*/
 .jumbotron {
     position: relative;
-    background: url('../images/CDAC-Header-04.png') repeat fixed;
+    background: url('../img/washington-dc-1.png') repeat fixed;
+    
     width: 100%;
-    /*height: 100px;*/
+    height: 500px;
     background-size: cover;
     overflow: hidden;
     margin-bottom: 0px;
     padding-top: 60px;
-    padding-bottom: 2px;
+    padding-bottom: 8%;
+    text-align: center;
+    
+}
+
+.headtext {
+    padding-left: 30px;
+    text-align: center;
+    color: white;
+    font-family: : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue";
 }
 
 #headerSection .logo {
@@ -76,52 +105,67 @@ section.front-page {
 	height: 700px;
 }
 
+.btn_register {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 17px;
+  background: #3498db;
+  padding: 12px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn_register:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
 /*Countdown Section*/
 
 .countdownSection {
-	background-color: #3075c4;
 	color: white;
-	padding-bottom: 30px;
+    text-align: center;
 }
 
 .countdownSection h4 {
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 10px;
 }
 
 .is-countdown {
-  /*border: 1px solid white;*/
-  background-color: #3075c4;
   border: none;
 }
 .countdown-row {
   height: 0;
   padding: 0;
+  text-align: center;
 }
 .countdown-section {
   text-align: center;
   padding: 20px;
-  border: 1px solid white;
-  background-color: transparent;
-  -webkit-border-radius: 5%;
-  -moz-border-radius: 5%;
-  border-radius: 5%;
   color: white;
 }
 .countdown-show4 .countdown-section {
-  width: 24%;
-  margin: 10px 0.5%;
+  padding-left: 20px;
+  width: 8%;
+  text-align: center;
 }
 .countdown-amount {
-  font-size: 36px;
+    
+  font-size: 25px;
   font-weight: 700;
   display: block;
 }
 .countdown-period {
   display: block;
-  font-size: 28px;
-  line-height: 1.2;
-  margin-top: 15px;
+  font-size: 23px;
 }
 /* Small devices (tablets, phones less than 767px) */
 @media (max-width: 767px) {
@@ -143,13 +187,8 @@ section.front-page {
 }
 
 
-/*Meeting Information Section*/
-/*Credit for texture is from http://www.transparenttextures.com/*/
-
 div.meetingSection {
-/*	background-color: #f5f5f5;
-	background-image: url("../images/absurdity.png");*/
-	background-color: #3075c4;
+	background-color: #white;
 }
 
 #meetingInformation {
@@ -186,7 +225,14 @@ div.meetingSection {
 }
 
 
+.cent {
+    text-align: center;
+}
 
+.spaced{
+    line-height: 180%;
+    
+}
 
 /*News from CDAC Section*/
 .newsFromCDACContainer {
@@ -250,17 +296,6 @@ div.carouselStyle .owl-next {
 	padding-left: 30px;
 }
 
-
-
-/*FOR FUTURE: figure out why you have to set the width of the div for Slick and for the div with the arrows
-*/
-/*.natureImages {
-	width: 750px;
-	margin: auto;
-	padding-top: 50px;
-}*/
-
-
 /*MISSION AND GOALS SECTION*/
 
 .missionTitle {
@@ -294,10 +329,7 @@ div.carouselStyle .owl-next {
 
 section#missionSection {
     position: relative;
-    background: white url('../images/cdac-logo-medium-fade.png') no-repeat fixed;
     width: 100%;
-    /*height: 100px;*/
-    /*background-size: cover;*/
     overflow: hidden;
     margin-bottom: 0px;
     height: 500px;
@@ -333,21 +365,6 @@ button.slick-next {
 	color: white;
 	font-weight: bold;
 }
-
-/*.memberprofileLink,
-.memberprofileLink:hover {
-	text-align: center;
-	padding-top: 50px;
-	color: white;
-}
-
-.member-profile-text,
-.member-profile-text:hover,
-.member-profile-text:active{
-	color: white;
-	text-decoration: none;
-		
-}*/
 
 .memberProfileLink {
 	text-align: center;
@@ -387,9 +404,6 @@ button.slick-next {
 
 /*ABOUT CDAC SECTION*/
 
-.footerStyle {
-}
-
 .aboutCDACSection {
 	margin-top: 60px;
 	margin-bottom: 60px;
@@ -413,8 +427,18 @@ ul.social-links li {
 
 /* Modals */
 
-.modal-title{
+.member-name{
 	font-size: 25px;
+	margin: 0;
+}
+
+.member-company{
+	font-size: 20px;
+	margin: 0;
+}
+
+.member-title{
+	font-size: 15px;
 }
 
 .container.modal.fade.in
@@ -428,9 +452,10 @@ ul.social-links li {
 	float: right;
 }
 
-.modal-content{
+.modal-content {
 	padding: 20px;
 }
+
 .contactUs a {
 	margin-left: 5px;
 }
@@ -439,6 +464,50 @@ ul.social-links li {
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+
+.img-circle{
+	border-radius: 50%;
+	width: 200px;
+}
+
+.row#center-profiles{
+	margin: 0 auto;
+	padding-left: 150px
+}
+
+.container.modal.fade.in {
+    /* background-color: transparent; */
+    box-shadow: none;
+    border: none;
+}
+
+.modal.fade {
+/*    -webkit-transition: opacity .3s linear, top .3s ease-out;
+    -moz-transition: opacity .3s linear, top .3s ease-out;
+    -o-transition: opacity .3s linear, top .3s ease-out;
+    transition: opacity .3s linear, top .3s ease-out;*/
+    top: -25%;
+    background-color: transparent;
+}
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.05);
+}
+
 
 /* Navigation */
 nav {    
@@ -456,8 +525,6 @@ nav {
 	border-color: transparent;
 	box-shadow: none;
 	font-size: 20px;
-/*  position: fixed;
-    background: black no-repeat;*/
     text-shadow: none;
     font-family:'Muli', Arial, sans-serif;
 }
@@ -475,4 +542,10 @@ nav > ul > li > a:link, a:hover{
 	text-decoration: none;
 
 }
+/* Changed the margins on the bootstrap rows to make the body have less margins so they
+ didn't overflow*/
 
+.page-wrapper .row {
+	margin-right: -1px;
+	margin-left: -10px;
+}

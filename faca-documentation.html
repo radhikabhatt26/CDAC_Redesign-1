@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -533,7 +532,11 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 <div id="feed1" style="display:none;"></div>
 <div id="feed2" style="display:none;"></div>
 <div id="feed3" style="display:none;"></div>
-<div id="feed4" style="display:none;"></div><!---BEA locked GDP and PI --->
+<div id="feed4" style="display:none;"></div>
+<!-- We participate in the US government's analytics program. See the data at analytics.usa.gov. -->
+<script src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC" type="text/javascript" id="_fed_an_ua_tag"></script>
+
+<!---BEA locked GDP and PI --->
 <div id="feed5" style="display:none;"></div>
 <script type="text/javascript" src="/sites/all/themes/icompany/js/indicator.js"></script>
 <script type="text/javascript" src="/sites/all/themes/icompany/js/relschedule.js"></script>
@@ -722,7 +725,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 		
 		<!-- page wrapper start -->
 		<!-- ================ -->
-		<div class="page-wrapper">
+		<div class="page-wrapper" style="background-color: white">
 		
 			<!-- banner start -->
 			<!-- ================ -->
@@ -742,7 +745,11 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 			</div> -->
 
 			<div class="jumbotron" style="height: 500px" id="headerSection">
-			    <div class="logo"></div>
+			    <div class="headtext ">
+                    <h2> <span style = "font-size: 180%;">COMMERCE DATA<br> ADVISORY COUNCIL</span></h2><br>
+                    <h4> <span style = "font-size: 140%">FACA DOCUMENTATION</span></h4>
+                   
+                </div>
 			    <div class="container">
 			    </div>
 			    </div>
@@ -751,8 +758,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 				<nav> 
 					<ul class="navigation">
 						<li class="btn btn-default"><a href="index.html">Home</a></li>
-						<li class="btn btn-default"><a href="index.html#meetingInformation">Meetings</a></li>
-						<li class="btn btn-default"><a href="profiles.html">Membership</a></li>
+						<!--<li class="btn btn-default"><a href="index.html#meetingInformation">Meetings</a></li>-->
 						<li class="btn btn-default"><a href="index.html#contactUs">Contact</a></li>
 					</ul>
 				</nav>
@@ -807,7 +813,12 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 					<li><a href="http://www.esa.doc.gov/sites/default/files/cdac/november-2015/cdac-members.pdf" target="blank">CDAC Members</a> (as of 10/15/15)</li>
 				</ul>
 
-				<h3> Contact: Burton Reist | <a href="mailto:breist@doc.gov" target="_top">breist@doc.gov</3>
+                <h2 id="contact">FACA Official Contact</h2>
+                <ul>
+					<li>Burton Reist <br>
+                        <a href="mailto:breist@doc.gov" target="_top">breist@doc.gov</3>
+                    </li>
+                </ul>
 
 				<br>
 
