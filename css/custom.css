@@ -548,3 +548,7 @@ nav > ul > li > a:link, a:hover{
 	margin-right: -1px;
 	margin-left: -10px;
 }
+
+.meeting_loc_date {
+	margin-top: 30px;
+}
