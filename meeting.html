@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -531,7 +530,10 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 <div id="feed1" style="display:none;"></div>
 <div id="feed2" style="display:none;"></div>
 <div id="feed3" style="display:none;"></div>
-<div id="feed4" style="display:none;"></div><!---BEA locked GDP and PI --->
+<div id="feed4" style="display:none;"></div>
+<!-- We participate in the US government's analytics program. See the data at analytics.usa.gov. -->
+<script src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC" type="text/javascript" id="_fed_an_ua_tag"></script>
+<!---BEA locked GDP and PI --->
 <div id="feed5" style="display:none;"></div>
 <script type="text/javascript" src="/sites/all/themes/icompany/js/indicator.js"></script>
 <script type="text/javascript" src="/sites/all/themes/icompany/js/relschedule.js"></script>
@@ -720,7 +722,7 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 		
 		<!-- page wrapper start -->
 		<!-- ================ -->
-		<div class="page-wrapper">
+		<div class="page-wrapper" style="background-color: white">
 		
 			<!-- banner start -->
 			<!-- ================ -->
@@ -740,27 +742,25 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 			</div> -->
 
 			<div class="jumbotron" style="height: 500px" id="headerSection">
-			    <div class="logo"></div>
-			    <div class="">
-			    </div>
+			    <div class="headtext ">
+                    <h2> <span style = "font-size: 180%;">COMMERCE DATA<br> ADVISORY COUNCIL</span></h2><br>
+                    <h4> <span style = "font-size: 140%">UPCOMING + PAST MEETINGS</span></h4>
+                   
+                </div>
+			    
 			</div>
 
 			<div>
 				<nav> 
 					<ul class="navigation">
 						<li class="btn btn-default"><a href="index.html">Home</a></li>
-						<li class="btn btn-default"><a href="meeting.html">Meetings</a></li>
-						<li class="btn btn-default"><a href="profiles.html">Membership</a></li>
-						<li class="btn btn-default"><a href="#contactUs">Contact</a></li>
+						<li class="btn btn-default"><a href="index.html#contactUs">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
 
 			<div class="container">
-				<div class="row">
-					<h1 class="titleDiv text-center">Upcoming & Past Meetings</h1>
-				</div>
-
+		
 				<div class="row">
 					<h2 class="titleSubtitle text-center">Please click a button to learn more</h2>
 				</div>		
@@ -777,7 +777,9 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 				</div>
 			</div>
 
+			
 			<div id="meetingPageInfo">
+				<div id="meeting2016Info">
 				<div class="mtgInfoDiv">
 					
 					<div class="mtgDate"><h1>May 5-6, 2016</h1></div>
@@ -786,18 +788,18 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 						<div>Google - New York</div>
 						<div>76 9th Avenue</div>
 						<div>New York, NY, 10011</div>
-						<div><a href="http://www.esa.doc.gov/sites/default/files/cdac/november-2015/cdac-charter-november-2015.pdf">CDAC Charter</a></div>
-						<div><a href="https://www.federalregister.gov/articles/2016/03/10/2016-05314/commerce-data-advisory-council-meeting">Federal Register Notice</a></div>
+						<div><a href="http://www.esa.doc.gov/sites/default/files/cdac/november-2015/cdac-charter-november-2015.pdf" target="_blank">CDAC Charter</a></div>
+						<div><a href="https://www.federalregister.gov/articles/2016/03/10/2016-05314/commerce-data-advisory-council-meeting" target="_blank">Federal Register Notice</a></div>
 					</div>
 					
 					<div>
-						<div class="mtgOverviewText">The Economic and Statistics Administration (ESA) is giving notice of the fourth meeting of the Commerce Data Advisory Council (CDAC). The CDAC will discuss economic data as well as other Council matters. The CDAC will meet in a plenary session on May 5th and 6th, 2016. Last-minute changes to the schedule are possible, which could prevent giving advance public notice of schedule adjustments.  Members of the public are invited to observe the Committee proceedings and make comment during the public Comment session. Please see the <a href="https://www.federalregister.gov/articles/2016/03/10/2016-05314/commerce-data-advisory-council-meeting">Federal Register Notice</a> for entry requirements and more information about the public comments.</div>
+						<div class="mtgOverviewText">The Economic and Statistics Administration (ESA) is giving notice of the fourth meeting of the Commerce Data Advisory Council (CDAC). The CDAC will discuss economic data as well as other Council matters. The CDAC will meet in a plenary session on May 5th and 6th, 2016. Last-minute changes to the schedule are possible, which could prevent giving advance public notice of schedule adjustments.  Members of the public are invited to observe the Committee proceedings and make comment during the public Comment session. Please see the <a href="https://www.federalregister.gov/articles/2016/03/10/2016-05314/commerce-data-advisory-council-meeting" target="_blank">Federal Register Notice</a> for entry requirements and more information about the public comments.</div>
 					</div>
 					
 					<div>
-						<a href="#"><h3>Meeting Agenda</h3></a>
-						<div><span class="glyphicon glyphicon-facetime-video"></span><p style="display:inline-block; margin-left: 5px"><a href="#">Day One Video</a></p></div>
-						<div><span class="glyphicon glyphicon-facetime-video"></span><p style="display: inline-block; margin-left: 5px"><a href="#">Day Two Video</a></p></div>
+						<a href="https://s3.amazonaws.com/cds-cdac/May+2016/CDACAgenda-NYC-2016-05-2.pdf" target="blank"><h3>Meeting Agenda</h3></a>
+						<div><span class="glyphicon glyphicon-facetime-video"></span><p style="display:inline-block; margin-left: 5px"><a href="https://www.youtube.com/watch?v=N9hXFsnV2mM" target="_blank">Day One Video</a></p></div>
+						<div><span class="glyphicon glyphicon-facetime-video"></span><p style="display: inline-block; margin-left: 5px"><a href="https://www.youtube.com/watch?v=Mz-TmIVXihc" target="_blank">Day Two Video</a></p></div>
 					</div>
 					
 					<div class="row presDiv">
@@ -806,8 +808,53 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 								<h4>Presentations - May 5, 2016</h4>
 								<table class="tablePresD1">
 									<tr>
-										<th><p>Coming Soon!</p></th>
+										<th><a href="https://s3.amazonaws.com/cds-cdac/May+2016/Sceleur_CENSUS_Thurs.pptx" target="_blank"><p>Census Big Data Retail Projects</p></a></th>
+										<th><p>Scott A Scheleur, CENSUS</p></th>
 									</tr>
+									<tr>
+										<th><a href="https://s3.amazonaws.com/cds-cdac/May+2016/Soloff_Premise_Thurs" target="_blank"><p>Premise</p></a></th>
+										<th><p>David Soloff, Premise</p></th>
+									</tr>
+									<tr>
+										<th><a href="https://s3.amazonaws.com/cds-cdac/May+2016/Thompson_BigData_Thurs" target="_blank"><p>Big Data and Modernizing Federal Big Data</p></a></th>
+										<th><p>John Thompson, CENSUS</p></th>
+									</tr>
+									<tr>
+										<th><a href="https://s3.amazonaws.com/cds-cdac/May+2016/Dunn_BEAActivities_Thurs" target="_blank"><p>Big Data Briefing on BEA Activities</p></a></th>
+										<th><p>Abe Dunn, BEA</p></th>
+									</tr>
+									<tr>
+										<th><a href="https://s3.amazonaws.com/cds-cdac/May+2016/Stein_Finance_Thurs" target="_blank"><p>Future of Finance</p></a></th>
+										<th><p>Jon Stein, Betterment</p></th>
+									</tr>
+									<tr>
+										<th><a href="https://s3.amazonaws.com/cds-cdac/May+2016/Bilbro_NewExporters_Thurs" target="_blank"><p>The New Exporters Project</p></a></th>
+										<th><p>Rebecca Bilbro, CDS</p></th>
+									</tr>
+									<tr>
+										<th><a href="https://s3.amazonaws.com/cds-cdac/May+2016/Rowland_Income_Thurs" target="_blank"><p>Income Inequality Products</p></a></th>
+										<th><p>Alison Rowland, CDS</p></th>
+									</tr>
+									<tr>
+										<th><a href=""><p>CDS Pilot Presentations</p></a></th>
+										<th><p>CDS Team</p></th>
+									</tr>
+									<tr>
+										<th colspan="2">
+											<ul>
+												<li>Related Material: <a href="http://opportunity.census.gov/" target="_blank">The Opportunity Project (Website)</a></li>
+												<li>Related Material: <a href="https://www.whitehouse.gov/the-press-office/2016/03/07/fact-sheet-white-house-launches-opportunity-project-utilizing-open-data" target="_blank">The Opportunity Project (White House Release)</a></li>
+												<li>Related Material: <a href="https://midaas.commerce.gov" target="_blank">MIDAAS Project (Website)</a></li>
+												<li>Related Material: <a href="http://fedscoop.com/open-data-commerce-department-income-inequality-midaas" target="_blank">MIDAAS Project (FedScoop Press)</a></li>
+												<li>Related Material: <a href="http://www.nextgov.com/big-data/2016/03/debating-income-equality-get-facts-right-new-commerce-app/126598/" target="_blank">MIDAAS Proejct (NextGov Press)</a></li>
+												<li>Related Material: <a href="https://www.commerce.gov/news/deputy-secretary-speeches/2016/03/us-deputy-secretary-commerce-bruce-andrews-delivers-keynote" target="_blank"> New Exporters Project (Blog Post)</a></li>
+												<li>Related Material: <a href="https://www.commerce.gov/datausability" target="_blank">Data Usability Project (Website)</a></li>
+												<li>Related Material: <a href="https://www.commerce.gov/datausability/docs/CDUP%20Guidelines.pdf" target="_blank">Data Usability Project Guidelines</a></li>
+												<li>Related Material: <a href="https://sunlightfoundation.com/blog/2016/03/02/commerce-department-launches-new-suite-of-open-data-tutorials/" target="_blank">Data Usability Project (Sunlight Foundation Blog Post)</a></li>
+												<li>Related Material: <a href="http://www.esa.gov/under-secretary-blog/announcing-commerce-data-usability-project" target="_blank"> Data Usability Project (ESA Announcement)</a></li>
+												<li>Related Material: <a href="http://www.fiercegovernmentit.com/story/commerce-launches-data-usability-project/2016-01-28" target="_blank">Data Usability Project (Fierce Government Blog Post)</a></li>
+											</ul>
+										</th>
 								</table>
 							</div>
 
@@ -815,7 +862,16 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 								<h4>Presentations - May 6, 2016</h4>						
 								<table class="tablePresD2">
 									<tr>
-										<th><p>Coming Soon!</p></th>
+										<th><a href="https://s3.amazonaws.com/cds-cdac/May+2016/TBeach_USPTO_Friday.pdf" target="_blank"><p>U.S. Patent and Trade Office CDAC Presentation</p></a></th>
+										<th>Tom Beach, USPTO</th>
+									</tr>
+									<tr>
+										<th><a href="https://s3.amazonaws.com/cds-cdac/May+2016/Hanisch_DataAlliance_Friday" target="_blank"><p>The Big Data Alliance</p></a></th>
+										<th><p>Robert Hanisch, NIST</p></th>
+									</tr>
+									<tr>
+										<th><a href="https://s3.amazonaws.com/cds-cdac/May+2016/Oberoi_CDUP_Friday.pptx" target="_blank"><p>Commerce Data Usability Project</p></a></th>
+										<th><p>Pri Oberoi, CDS</p></th>
 									</tr>
 								</table>
 							</div>
@@ -852,11 +908,12 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 
 					<hr>
 				</div>
-			
+				
+				</div> <!-- meeting2016Info Div End -->
 
 
-
-				<!-- <div class="mtgInfoDiv">
+				<div id="meeting2015Info">
+				<div class="mtgInfoDiv">
 					
 					<div class="mtgDate"><h1>October 29-30, 2015 </h1></div>
 
@@ -1085,7 +1142,8 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 							</div>
 						</div>
 					<hr>
-				</div> -->
+				</div>
+				</div>
 			</div>
 
 
@@ -1096,55 +1154,50 @@ var usagov_sayt_url = 'http://search.usa.gov/sayt?aid=4163&';var aid = 'esa';
 
 				<!-- .footer start -->
 				<!-- ================ -->
-				<div class="footer">
+				<section style="background-color:white;">
+				<div class="footer"> <div style="background-color:#6AABFC; text-align:center">
+			             <h2 ><span style="font-size:140%; color:white;"> ABOUT CDAC</span></h2>
+                        </div> 
 					<div class="container aboutCDACSection">
 						<div class="footer-inner">
-							<!-- <div class="row"> -->
-								<div class="col-md-6">
-									<div class="footer-content">
-										<div class="logo-footer"><img id="logo-footer" src="images/cdac-logo.png" alt=""></div>
-										<div class="row">
-											<div class="">
-												<h2>ABOUT CDAC</h2>
-                                                   <p>The CDAC consists of up to 20 members representing the entire spectrum of Commerce data including demographic, economic, scientific, environmental, patent, and geospatial data. These leaders come from the information technology, NGO, non-profit, and academic communities, and from local governments—leaders who appreciate the range of data that the Department of Commerce distributes and the full lifecycle of data collection, compilation, analysis, and dissemination. They offer a balanced perspective and varied expertise to ensure meaningful dialogue and guidance on how the Commerce Department can realize its vision as America's Data Agency.</p>
-											</div>
-											<div class="">
-												<div id="footerLinks">
-													<a href="index.html#meetingInformation"><p> Meetings </p></a>
-													<a href="index.html#missionSection"><p> Mission and Goals </p></a>
-													<a href="index.html#newsFromCDAC"><p> News from CDAC </p></a>
-													<a href="index.html#memberProfileSection"><p> Membership </p></a>
-													<a href="faca-documentation.html"><p>FACA Documentation</p></a>
-												</div>
-											</div>
-											
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="footer-content">
-										<div class="contactUs" id="contactUs">
-												<div class="contactUs">
-													<h4>Contact Us</h4>
-													<div><i class="fa fa-male"></i><a href="#">Burton Reist</a></div>
-													<div>Director of External Affairs and Designated Federal Official, CDAC</div>
-													<div><i class="fa fa-fa-location-arrow"></i>Department of Commerce</div>
-													<div>Economics and Statistics Administration</div>
-													<div>1401 Constitution Ave NW</div>
-													<div>Washington, DC 20230</div>
-													<div><i class="fa fa-phone pr-10 text-default"></i> (202) 482-3331</div>
-													<div><i class="fa fa-envelope-o pr-10"></i><a href="mailto:CDAC@doc.gov" style="text-decoration: underline; padding-top: 5px">CDAC@doc.gov</a></div>
-												</div>
-										</div>
-									</div>
-								</div>
-							<!-- </div> -->
+                            
+                        <div  class="row">
+                        	<div  class=" col-lg-1 col-md-1" ></div>
+                        	<div  class=" col-lg-5 col-md-5 " style="text-align:left;">
+                        
+								<h4>About</h4>				
+	                            <p>The CDAC consists of up to 20 members representing the entire spectrum of Commerce data including demographic, economic, scientific, environmental, patent, and geospatial data. These leaders come from the information technology, NGO, non-profit, and academic communities, and from local governments—leaders who appreciate the range of data that the Department of Commerce distributes and the full lifecycle of data collection, compilation, analysis, and dissemination. They offer a balanced perspective and varied expertise to ensure meaningful dialogue and guidance on how the Commerce Department can realize its vision as America's Data Agency.</p>
+	                        
+	                            <div id="footerLinks">
+	                                <a href="meeting.html"><button type="button" class="btn btn-default" style = "font-family:HelveticaNeue-Light">Past Meetings</button></a>
+	                                <a href="faca-documentation.html"><button type="button" class="btn btn-default" style = "font-family:HelveticaNeue-Light">FACA Documentation</button></a>
+
+	                            </div>
+                     
+                        	</div>
+                        
+                        <div  class=" col-lg-5 col-md-5" style="text-align:left;">
+                           
+                                <h4>Contact Us</h4>
+                                <div>
+                                    <a href="#"><strong>Burton Reist</strong></a>
+                                       <br>Director of External Affairs and Designated Federal Official, CDAC
+                                       <br><i class="fa fa-fa-location-arrow"></i>Department of Commerce
+                                       <br>Economics and Statistics Administration
+                                       <br>1401 Constitution Ave NW
+                                       <br>Washington, DC 20230
+                                       <br><i class="fa fa-phone pr-10 text-default"></i> (202) 482-3331
+                                       <br><i class="fa fa-envelope-o pr-10"></i> <a href="mailto:DataAdvisoryCouncil@doc.gov" style="text-decoration: underline; padding-top: 5px">DataAdvisoryCouncil@doc.gov</a>
+                                </div>
 						</div>
+                        <div  class=" col-lg-1 col-md-1" ></div>
+                        </div>
+                	</div>
 					</div>
 				</div>
 				<!-- .footer end -->
-
-			</footer>
+</section>
+			
 			<!-- footer end -->
 			
 		</div>

@@ -1,3 +1,4 @@
+
 /* http://keith-wood.name/countdown.html
    Countdown for jQuery v2.0.2.
    Written by Keith Wood (kbwood{at}iinet.com.au) January 2008.
@@ -137,7 +138,7 @@
 			@property [isRTL=false] {boolean} True for right-to-left languages, false for left-to-right. */
 		regionalOptions: { // Available regional settings, indexed by language/country code
 			'': { // Default regional settings - English/US
-				labels: ['Years', 'Months', 'Weeks', 'Days', 'Hours', 'Minutes', 'Seconds'],
+				labels: ['Years', 'Months', 'Weeks', 'days', 'hours', 'minutes', 'seconds'],
 				labels1: ['Year', 'Month', 'Week', 'Day', 'Hour', 'Minute', 'Second'],
 				compactLabels: ['y', 'm', 'w', 'd'],
 				whichLabels: null,
