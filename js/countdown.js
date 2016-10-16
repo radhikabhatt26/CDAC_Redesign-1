@@ -1,5 +1,7 @@
-    // set the date we're counting down to
-    var target_date = new Date('September 22, 2016').getTime();
+$(document).ready(function() {
+
+       // set the date we're counting down to
+    var target_date = new Date('October 28, 2016').getTime();
 
     // variables for time units
     var days, hours, minutes, seconds;
@@ -27,9 +29,14 @@
             minutes = parseInt(seconds_left / 60);
             seconds = parseInt(seconds_left % 60);
 
+
             // format countdown string + set tag value
-            countdown.innerHTML = '<span class="days"><b>' + days + '</b> day </span> <span class="hours"><b>' + hours + '</b> hours </span> <span class="minutes"><b>' + minutes + '</b> minutes </span> <span class="seconds"><b>' + seconds + '</b> seconds </span>';
+            countdown.innerHTML = '<span class="days"><b>' + days + '</b> days </span> <span class="hours"><b>' + hours + '</b> hours </span> <span class="minutes"><b>' + minutes + '</b> minutes </span> <span class="seconds"><b>' + seconds + '</b> seconds </span>';
 
         }
 
     }, 1000);
+    
+});
+
+ 
